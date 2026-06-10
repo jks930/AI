@@ -61,9 +61,9 @@ const Cta = () => {
           <div className="absolute right-10 top-1/2 -translate-y-1/2 w-[250px] h-[250px] bg-[#4a00ff]/20 rounded-full blur-[60px] pointer-events-none"></div>
 
           <img
-            src="/logoooo.png"
-            alt="ITMC Systems Logo"
-            className="w-[60%] max-w-[350px] h-auto object-contain z-10 transform transition-transform duration-700 hover:scale-105 brightness-0 invert drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+            src="/services.png"
+            alt="AI Solutions"
+            className="w-[80%] max-w-[450px] h-auto object-contain z-10 transform transition-transform duration-700 hover:scale-105 drop-shadow-2xl rounded-2xl"
           />
         </div>
 
