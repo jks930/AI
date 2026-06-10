@@ -2,14 +2,14 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative w-full pt-[80px] lg:pt-[84px] pb-2 lg:pb-4 overflow-hidden bg-gradient-to-r from-[#f0efff] via-[#f7f5ff] to-[#e6f7ff]">
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
+    <section className="relative w-full pt-[80px] lg:pt-[84px] pb-10 lg:pb-4 overflow-hidden bg-gradient-to-r from-[#f0efff] via-[#f7f5ff] to-[#e6f7ff]">
+      <div className="max-w-[1600px] mx-auto px-0 sm:px-6 lg:px-10 relative z-10">
         <div className="flex flex-col lg:flex-row items-stretch relative gap-6 lg:gap-6">
 
           {/* Left Content */}
-          <div className="w-full lg:w-[55%] pb-0 lg:pb-0 pt-0 lg:pt-0 z-20 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
+          <div className="w-full lg:w-[55%] pb-6 lg:pb-0 pt-4 lg:pt-0 px-4 lg:px-0 z-20 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
             <h1
-              className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[60px] font-extrabold tracking-tight leading-[1.15] mb-3"
+              className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[60px] font-extrabold tracking-tight leading-[1.15] mb-6 lg:mb-3"
               style={{
                 background: 'linear-gradient(90.3deg, #6F00FF 20.19%, #0D00FF 80.77%)',
                 WebkitBackgroundClip: 'text',
@@ -20,12 +20,12 @@ const Hero = () => {
               Development Company
             </h1>
 
-            <p className="text-[17px] text-gray-700 mb-4 leading-[1.8] xl:pr-32">
+            <p className="text-[17px] text-gray-700 mb-8 lg:mb-4 leading-[1.8] xl:pr-32">
               At itmcsystem, we partner with modern enterprises to engineer innovative, AI-powered applications. Leveraging Machine Learning, LLMs, and Intelligent Automation, we turn ambitious ideas into scalable digital solutions that accelerate your business growth.
             </p>
 
             {/* Checkmarks */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-4 mb-4 w-full max-w-[500px] lg:max-w-none justify-items-center lg:justify-items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 lg:gap-y-2 gap-x-4 mb-8 lg:mb-4 w-full max-w-[500px] lg:max-w-none justify-items-center lg:justify-items-start">
               {[
                 'Over 100 AI Solutions Built',
                 '50+ Dedicated AI Experts',
@@ -53,8 +53,8 @@ const Hero = () => {
           </div>
 
           {/* Right Video Container - Equal Height */}
-          <div className="w-full lg:w-[45%] relative mt-4 lg:mt-0 flex flex-col justify-stretch min-h-[200px] lg:min-h-[300px] z-10 py-0 lg:py-0">
-            <div className="relative w-full h-full flex-grow rounded-[32px] overflow-hidden shadow-2xl border-4 border-white/40">
+          <div className="w-full lg:w-[45%] relative mt-6 lg:mt-0 flex flex-col justify-stretch min-h-[300px] lg:min-h-[300px] z-10 py-0 lg:py-0">
+            <div className="relative w-full h-full flex-grow rounded-none lg:rounded-[32px] overflow-hidden shadow-2xl border-y-4 lg:border-4 border-x-0 lg:border-white/40 border-white/40">
               <video
                 src="/h1vedio.mp4"
                 autoPlay

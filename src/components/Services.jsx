@@ -12,10 +12,10 @@ const Services = () => {
         backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b21a8' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
       }}></div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-0 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header - Centered */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16 px-4 lg:px-0">
           <div className="inline-block px-4 py-1.5 rounded-full bg-[#f0ecff] text-[#4c00ff] font-bold text-[13px] tracking-wide mb-6 border border-[#d8ccff]">
             AI DEVELOPMENT SERVICES
           </div>
@@ -28,7 +28,7 @@ const Services = () => {
         </div>
 
         {/* Hero Image Banner (Re-using their services.png concept but large) */}
-        <div className="w-full rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(76,0,255,0.15)] bg-gray-900 h-[300px] lg:h-[400px] relative group transform hover:scale-[1.01] transition-transform duration-700 ease-out mb-20">
+        <div className="w-full rounded-none lg:rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(76,0,255,0.15)] bg-gray-900 h-[300px] lg:h-[400px] relative group transform hover:scale-[1.01] transition-transform duration-700 ease-out mb-20">
           <img 
             src="/services.png" 
             alt="AI Application Development Services" 
@@ -41,7 +41,7 @@ const Services = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d00ff]/90 via-[#4c00ff]/30 to-transparent"></div>
           
           <div className="absolute bottom-8 left-8 right-8 flex justify-center lg:justify-start">
-            <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 lg:p-6 rounded-2xl shadow-xl">
+            <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 lg:p-6 rounded-none sm:rounded-2xl shadow-xl w-full sm:w-auto">
               <div className="flex items-center gap-5">
                 <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.3)]">
                   <Sparkles className="w-7 h-7 text-[#4c00ff]" />

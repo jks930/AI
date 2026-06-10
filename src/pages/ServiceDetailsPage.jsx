@@ -39,10 +39,10 @@ const ServiceDetailsPage = () => {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#4a00ff]/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/3"></div>
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#0d6efd]/5 rounded-full blur-[60px] translate-y-1/3 -translate-x-1/4"></div>
 
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <div className="max-w-[1400px] mx-auto px-0 sm:px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             
             {/* Left Content */}
-            <div className="w-full lg:w-[55%] flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div className="w-full lg:w-[55%] flex flex-col items-center text-center lg:items-start lg:text-left px-4 lg:px-0">
               <div className="inline-block px-4 py-1.5 rounded-full bg-[#eef0ff] text-[#4a00ff] font-semibold text-[14px] mb-6 border border-[#d6dcff]">
                 {service.category} Solutions
               </div>
@@ -64,7 +64,7 @@ const ServiceDetailsPage = () => {
 
             {/* Right Image */}
             <div className="w-full lg:w-[45%] relative flex justify-center">
-              <div className="w-full max-w-[500px] rounded-[24px] overflow-hidden shadow-2xl relative bg-[#080014]">
+              <div className="w-full max-w-[500px] rounded-none sm:rounded-[24px] overflow-hidden shadow-2xl relative bg-[#080014]">
                 <img src={service.heroImage} alt={service.title} className="w-full h-auto object-cover opacity-90" />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#4a00ff]/20 to-[#0d6efd]/20 mix-blend-overlay"></div>
               </div>
@@ -75,8 +75,8 @@ const ServiceDetailsPage = () => {
 
         {/* ── Overview Section ── */}
         <section className="py-20 lg:py-28 bg-white">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-16 items-center">
-            <div className="w-full lg:w-1/2">
+          <div className="max-w-[1200px] mx-auto px-0 sm:px-6 lg:px-12 flex flex-col lg:flex-row gap-16 items-center">
+            <div className="w-full lg:w-1/2 px-4 lg:px-0">
               <h2 className="text-[32px] lg:text-[40px] font-extrabold text-gray-900 leading-[1.2] mb-6 tracking-tight">
                 {service.overviewTitle}
               </h2>
@@ -102,7 +102,7 @@ const ServiceDetailsPage = () => {
                     const Icon = featureIcons[idx % featureIcons.length];
                     const color = featureColors[idx % featureColors.length];
                     return (
-                      <div key={idx} className={`bg-[#f8f9fa] border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow ${idx % 2 !== 0 ? 'mt-0 sm:mt-8' : ''}`}>
+                      <div key={idx} className={`bg-[#f8f9fa] border-y sm:border border-gray-100 rounded-none sm:rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow ${idx % 2 !== 0 ? 'mt-0 sm:mt-8' : ''}`}>
                          <div className={`w-12 h-12 ${color.bg} ${color.text} rounded-xl flex items-center justify-center mb-5`}>
                            <Icon className="w-6 h-6" />
                          </div>

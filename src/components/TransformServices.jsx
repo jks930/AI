@@ -13,10 +13,10 @@ export default function TransformServices() {
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-400/20 rounded-full blur-[120px] pointer-events-none -translate-y-1/3 translate-x-1/3"></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-400/20 rounded-full blur-[100px] pointer-events-none translate-y-1/3 -translate-x-1/3"></div>
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1400px] mx-auto px-0 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header Section (Centered) */}
-        <div className="text-center max-w-4xl mx-auto mb-20">
+        <div className="text-center max-w-4xl mx-auto mb-20 px-4 lg:px-0">
           <div className="inline-block px-4 py-1.5 rounded-full bg-blue-400/20 text-white font-semibold text-[14px] mb-6 border border-blue-400/30">
             Enterprise AI
           </div>
@@ -34,7 +34,7 @@ export default function TransformServices() {
             <Link 
               to={`/service/${service.slug}`}
               key={index} 
-              className="bg-white rounded-[24px] overflow-hidden flex flex-col sm:flex-row group hover:-translate-y-2 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] cursor-pointer border border-transparent hover:border-blue-200"
+              className="bg-white rounded-none sm:rounded-[24px] overflow-hidden flex flex-col sm:flex-row group hover:-translate-y-2 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] cursor-pointer border-y sm:border border-transparent hover:border-blue-200"
             >
               {/* Image Container */}
               <div className="sm:w-2/5 h-[220px] sm:h-auto overflow-hidden relative">
