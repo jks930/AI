@@ -2,12 +2,12 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative w-full pt-[80px] lg:pt-[84px] pb-10 lg:pb-20 overflow-hidden bg-gradient-to-r from-[#f0efff] via-[#f7f5ff] to-[#e6f7ff]">
+    <section className="relative w-full pt-[80px] lg:pt-[84px] pb-6 lg:pb-12 overflow-hidden bg-gradient-to-r from-[#f0efff] via-[#f7f5ff] to-[#e6f7ff]">
       <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 relative z-10">
         <div className="flex flex-col lg:flex-row items-stretch relative gap-10 lg:gap-8">
 
           {/* Left Content */}
-          <div className="w-full lg:w-[55%] pb-10 lg:pb-0 pt-6 lg:pt-4 z-20 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
+          <div className="w-full lg:w-[55%] pb-4 lg:pb-0 pt-4 lg:pt-2 z-20 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
             <h1
               className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[60px] font-extrabold tracking-tight leading-[1.15] mb-6"
               style={{
@@ -20,12 +20,12 @@ const Hero = () => {
               Development Company
             </h1>
 
-            <p className="text-[17px] text-gray-700 mb-10 leading-[1.8] xl:pr-32">
+            <p className="text-[17px] text-gray-700 mb-8 leading-[1.8] xl:pr-32">
               At itmcsystem, we partner with modern enterprises to engineer innovative, AI-powered applications. Leveraging Machine Learning, LLMs, and Intelligent Automation, we turn ambitious ideas into scalable digital solutions that accelerate your business growth.
             </p>
 
             {/* Checkmarks */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-4 mb-10 w-full max-w-[500px] lg:max-w-none justify-items-center lg:justify-items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-4 mb-8 w-full max-w-[500px] lg:max-w-none justify-items-center lg:justify-items-start">
               {[
                 'Over 100 AI Solutions Built',
                 '50+ Dedicated AI Experts',
@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
 
           {/* Right Video Container - Equal Height */}
-          <div className="w-full lg:w-[45%] relative mt-6 lg:mt-0 flex flex-col justify-stretch min-h-[350px] lg:min-h-[500px] z-10 py-6 lg:py-4">
+          <div className="w-full lg:w-[45%] relative mt-6 lg:mt-0 flex flex-col justify-stretch min-h-[300px] lg:min-h-[400px] z-10 py-4 lg:py-2">
             <div className="relative w-full h-full flex-grow rounded-[32px] overflow-hidden shadow-2xl border-4 border-white/40">
               <video
                 src="/h1vedio.mp4"
