@@ -8,19 +8,33 @@ const Hero = () => {
 
           {/* Left Content */}
           <div className="w-full lg:w-[55%] pb-6 lg:pb-0 pt-4 lg:pt-0 px-4 lg:px-0 z-20 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
-            <h1
-              className="text-[36px] sm:text-[46px] lg:text-[56px] xl:text-[60px] font-extrabold tracking-tight leading-[1.15] mb-6 lg:mb-3"
-              style={{
-                background: 'linear-gradient(90.3deg, #6F00FF 20.19%, #0D00FF 80.77%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent'
-              }}
-            >
-              Artificial Intelligence <br className="hidden lg:block" />
-              Development Company
+            {/* Top Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/70 backdrop-blur-md border border-[#4c00ff]/15 text-[#4c00ff] text-[13px] sm:text-[14px] font-bold mb-5 shadow-[0_4px_10px_rgba(76,0,255,0.05)] transition-transform hover:scale-105">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6F00FF] opacity-60"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#4c00ff]"></span>
+              </span>
+              Pioneering the AI Revolution
+            </div>
+
+            <h1 className="text-[40px] sm:text-[50px] lg:text-[60px] xl:text-[64px] font-extrabold tracking-[-0.03em] leading-[1.05] mb-6 lg:mb-5 text-[#0f172a]">
+              <span className="relative inline-block">
+                <span className="absolute -inset-1 blur-xl bg-gradient-to-r from-[#6F00FF]/20 to-[#0D00FF]/20 opacity-50 rounded-lg"></span>
+                <span 
+                  className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#6F00FF] via-[#9d4edd] to-[#0D00FF]"
+                  style={{
+                    backgroundSize: '200% auto',
+                    animation: 'text-gradient 4s linear infinite'
+                  }}
+                >
+                  Artificial Intelligence
+                </span>
+              </span>
+              <br />
+              <span className="text-[#1e293b]">Development Company</span>
             </h1>
 
-            <p className="text-[16px] sm:text-[17px] text-gray-700 mb-8 lg:mb-4 leading-[1.7] lg:leading-[1.8] xl:pr-32 px-2 lg:px-0">
+            <p className="text-[16px] sm:text-[18px] text-[#475569] mb-8 lg:mb-6 leading-[1.7] lg:leading-[1.8] xl:pr-32 px-2 lg:px-0">
               At itmcsystem, we partner with modern enterprises to engineer innovative, AI-powered applications. Leveraging Machine Learning, LLMs, and Intelligent Automation, we turn ambitious ideas into scalable digital solutions that accelerate your business growth.
             </p>
 
@@ -81,6 +95,11 @@ const Hero = () => {
           0% { transform: translateY(0px); }
           50% { transform: translateY(-15px); }
           100% { transform: translateY(0px); }
+        }
+        @keyframes text-gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
         }
       `}</style>
     </section>
