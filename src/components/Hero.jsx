@@ -20,12 +20,12 @@ const Hero = () => {
               Development Company
             </h1>
 
-            <p className="text-[17px] text-gray-700 mb-8 lg:mb-4 leading-[1.8] xl:pr-32">
+            <p className="text-[16px] sm:text-[17px] text-gray-700 mb-8 lg:mb-4 leading-[1.7] lg:leading-[1.8] xl:pr-32 px-2 lg:px-0">
               At itmcsystem, we partner with modern enterprises to engineer innovative, AI-powered applications. Leveraging Machine Learning, LLMs, and Intelligent Automation, we turn ambitious ideas into scalable digital solutions that accelerate your business growth.
             </p>
 
             {/* Checkmarks */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 lg:gap-y-2 gap-x-4 mb-8 lg:mb-4 w-full max-w-[500px] lg:max-w-none justify-items-center lg:justify-items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 lg:gap-y-2 gap-x-4 mb-8 lg:mb-4 w-fit mx-auto lg:mx-0 justify-items-start">
               {[
                 'Over 100 AI Solutions Built',
                 '50+ Dedicated AI Experts',
@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
 
             {/* Button */}
-            <a href="#contact" className="group inline-flex items-center justify-center px-9 py-4 text-[16px] font-bold text-white bg-[#4c00ff] hover:bg-[#3d00cc] rounded-full transition-all duration-300 shadow-[0_8px_20px_rgba(76,0,255,0.25)] hover:shadow-[0_12px_25px_rgba(76,0,255,0.4)] hover:-translate-y-0.5">
+            <a href="#contact" className="group inline-flex items-center justify-center px-8 py-3.5 lg:px-9 lg:py-4 text-[15px] lg:text-[16px] font-bold text-white bg-[#4c00ff] hover:bg-[#3d00cc] rounded-full transition-all duration-300 shadow-[0_8px_20px_rgba(76,0,255,0.25)] hover:shadow-[0_12px_25px_rgba(76,0,255,0.4)] hover:-translate-y-0.5">
               Discover Our AI Services
               <svg className="w-[18px] h-[18px] ml-2 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
@@ -53,8 +53,8 @@ const Hero = () => {
           </div>
 
           {/* Right Video Container - Equal Height */}
-          <div className="w-full lg:w-[45%] relative mt-6 lg:mt-0 flex flex-col justify-stretch min-h-[300px] lg:min-h-[300px] z-10 py-0 lg:py-0">
-            <div className="relative w-full h-full flex-grow rounded-none lg:rounded-[32px] overflow-hidden shadow-2xl border-y-4 lg:border-4 border-x-0 lg:border-white/40 border-white/40">
+          <div className="w-full lg:w-[45%] relative mt-6 lg:mt-0 flex flex-col justify-stretch min-h-[250px] sm:min-h-[300px] z-10 py-0 lg:py-0 px-4 lg:px-0 pb-8 lg:pb-0">
+            <div className="relative w-full h-full flex-grow rounded-[20px] lg:rounded-[32px] overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-white/40 border-white/40">
               <video
                 src="/h1vedio.mp4"
                 autoPlay
