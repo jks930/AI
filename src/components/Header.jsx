@@ -20,14 +20,14 @@ const Header = () => {
       
       setScrolled(true);
       const el = document.elementFromPoint(window.innerWidth / 2, 80);
-      if (el) {
+          if (el) {
         const themeEl = el.closest('[data-header-theme]');
         if (themeEl) {
           setHeaderTheme(themeEl.getAttribute('data-header-theme'));
           setHeaderBg(themeEl.getAttribute('data-header-bg'));
         } else {
           setHeaderTheme('light');
-          setHeaderBg('bg-white/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.05)] border-b border-gray-100');
+            setHeaderBg('bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm');
         }
       }
     };
@@ -42,13 +42,13 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-500 ${scrolled ? (headerBg + (headerTheme === 'dark' ? ' border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.2)]' : '')) : 'bg-transparent'}`}>
-      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10">
+    <header className={`fixed w-full top-0 z-50 transition-all duration-500 px-4 sm:px-6 lg:px-10 ${scrolled ? 'py-3 sm:py-4' : 'py-0'}`}>
+      <div className={`max-w-[1600px] mx-auto transition-all duration-500 ${scrolled ? (headerTheme === 'dark' ? 'bg-[#0f172a]/80 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.12)] rounded-full px-6 lg:px-8' : 'bg-white/85 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_rgba(76,0,255,0.06)] rounded-full px-6 lg:px-8') : 'bg-transparent px-0'}`}>
         <div className={`flex justify-between items-center transition-all duration-500 ${scrolled ? 'h-16' : 'h-24'}`}>
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="/" className="flex items-center">
-              <img src="/logoo.png" alt="itmcsystem logo" className={`h-12 lg:h-14 w-auto transition-all duration-300 ${(scrolled && headerTheme === 'dark') ? 'brightness-0 invert' : ''}`} />
+            <a href="/" className="flex items-center group">
+              <img src="/logoai.svg" alt="logoai" className={`w-auto transition-all duration-500 group-hover:scale-105 filter drop-shadow-sm group-hover:drop-shadow-md ${scrolled ? 'h-11 lg:h-12' : 'h-14 lg:h-16'}`} />
             </a>
           </div>
 

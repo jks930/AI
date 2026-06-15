@@ -2,22 +2,15 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="relative w-full pt-[80px] lg:pt-[84px] pb-10 lg:pb-4 overflow-hidden bg-gradient-to-r from-[#f0efff] via-[#f7f5ff] to-[#e6f7ff]">
+    <section className="relative w-full pt-[100px] lg:pt-[116px] pb-8 lg:pb-2 overflow-hidden bg-gradient-to-r from-[#f0efff] via-[#f7f5ff] to-[#e6f7ff]">
       <div className="max-w-[1600px] mx-auto px-0 sm:px-6 lg:px-10 relative z-10">
         <div className="flex flex-col lg:flex-row items-stretch relative gap-6 lg:gap-6">
 
           {/* Left Content */}
           <div className="w-full lg:w-[55%] pb-6 lg:pb-0 pt-4 lg:pt-0 px-4 lg:px-0 z-20 flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
-            {/* Top Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-white/70 backdrop-blur-md border border-[#4c00ff]/15 text-[#4c00ff] text-[13px] sm:text-[14px] font-bold mb-5 shadow-[0_4px_10px_rgba(76,0,255,0.05)] transition-transform hover:scale-105">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6F00FF] opacity-60"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#4c00ff]"></span>
-              </span>
-              Pioneering the AI Revolution
-            </div>
 
-            <h1 className="text-[40px] sm:text-[50px] lg:text-[60px] xl:text-[64px] font-extrabold tracking-[-0.03em] leading-[1.05] mb-6 lg:mb-5 text-[#0f172a]">
+
+            <h1 className="text-[32px] sm:text-[42px] lg:text-[50px] xl:text-[56px] font-extrabold tracking-[-0.03em] leading-[1.1] mb-6 lg:mb-5 text-[#0f172a]">
               <span className="relative inline-block">
                 <span className="absolute -inset-1 blur-xl bg-gradient-to-r from-[#6F00FF]/20 to-[#0D00FF]/20 opacity-50 rounded-lg"></span>
                 <span 

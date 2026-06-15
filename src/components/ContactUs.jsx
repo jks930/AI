@@ -45,7 +45,7 @@ const ContactUs = () => {
               {/* Profile/Logo Image */}
               <div className="w-28 h-28 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md flex items-center justify-center p-4 mb-8 shadow-lg">
                 <img
-                  src="/logoooo.png"
+                  src="/logoai.svg"
                   alt="ITMC Systems"
                   className="w-full h-auto object-contain brightness-0 invert"
                 />

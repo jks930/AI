@@ -16,7 +16,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-3">
             <a href="/" className="inline-block mb-6">
-              <img src="/logoo.png" alt="itmcsystem logo" className="h-14 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" />
+              <img src="/logoai.svg" alt="logoai" className="h-14 w-auto opacity-100 hover:opacity-100 transition-opacity" />
             </a>
             <p className="text-gray-400 text-[14px] leading-[1.8] mb-8">
               Founded in 2016 in Delaware, ITMC Systems began as a software house and has evolved into a next-generation AI & Staffing Transformation company. Today we operate across 5 countries, serve 38+ US states, and combine cutting-edge AI with elite human talent to deliver outcomes — not just outputs.
