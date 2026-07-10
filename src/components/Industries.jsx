@@ -1,77 +1,78 @@
 import React from 'react';
+import { Building2, Briefcase, Globe, ShieldCheck } from 'lucide-react';
 
 const industriesData = [
   {
     title: "PropTech & Real Estate",
     subtitle: "Intelligent property valuation.",
     content: "Modernizing the property market with intelligent systems. We deploy predictive algorithms to evaluate property values accurately and generate automated virtual experiences for investors and agencies.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/intelligent-property-valuation.jpeg"
   },
   {
     title: "On-Demand Economy",
     subtitle: "Hyper-efficient service scaling.",
     content: "Fueling the gig economy through hyper-efficient routing and dynamic pricing models. Our matchmaking algorithms drastically reduce wait times and scale platform profitability.",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/on-demand-economy.jpeg"
   },
   {
     title: "Healthcare & Life Sciences",
     subtitle: "Precision medical diagnostics.",
     content: "Revolutionizing patient care through precision diagnostics. Our models empower clinicians with real-time patient monitoring and personalized, data-driven treatment strategies.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/healthcare-life-sciences.jpeg"
   },
   {
     title: "Financial Services & Banking",
     subtitle: "Secure algorithmic trading.",
     content: "Securing and optimizing financial ecosystems. We deliver autonomous trading algorithms, rapid fraud detection, and highly personalized intelligent banking experiences.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/financial-services-banking.jpeg"
   },
   {
     title: "Supply Chain & Logistics",
     subtitle: "Global fleet optimization.",
     content: "Orchestrating complex global supply chains with predictive analytics. Our fleet optimization networks minimize operational costs and ensure perfectly timed global deliveries.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/ai-optimized-supply-chains.jpeg"
   },
   {
     title: "Retail & E-Commerce",
     subtitle: "Hyper-personalized commerce.",
     content: "Redefining digital storefronts with hyper-personalized shopping engines. We analyze deep consumer behavior to optimize inventory and maximize conversion rates.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/retail-e-commerce.jpeg"
   },
   {
     title: "Smart Manufacturing",
     subtitle: "Industry 4.0 automation.",
     content: "Powering Industry 4.0 with autonomous robotics and predictive maintenance. We eliminate factory downtime and enforce flawless, vision-based quality control.",
-    image: "https://images.unsplash.com/photo-1565439390141-86689d0a6237?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/smart-manufacturing.jpeg"
   },
   {
     title: "Education Technology",
     subtitle: "Adaptive digital tutors.",
     content: "Democratizing learning via adaptive AI tutors. Our platforms personalize curriculum pacing for students while automating administrative burdens for educators.",
-    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/education-technology.jpeg"
   },
   {
     title: "Travel & Hospitality",
     subtitle: "Dynamic itinerary generation.",
     content: "Elevating the traveler experience through dynamic itinerary generation and intelligent booking architectures that respond instantly to customer demands.",
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/travel-hospitality.jpeg"
   },
   {
     title: "InsurTech",
     subtitle: "Automated risk assessment.",
     content: "Streamlining complex underwriting with intelligent risk assessment. Our automated systems accelerate claims processing and proactively flag fraudulent submissions.",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66cb85?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/insurtech.jpeg"
   },
   {
     title: "Media & Entertainment",
     subtitle: "Algorithmic content curation.",
     content: "Transforming content consumption with algorithmic curation. We utilize deep audience analytics and automated production tools to keep viewers continuously engaged.",
-    image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/media-entertainment.jpeg"
   },
   {
     title: "Cyber & Physical Security",
     subtitle: "Proactive threat detection.",
     content: "Safeguarding critical infrastructure via proactive anomaly detection. Our intelligent surveillance networks identify and neutralize threats before they materialize.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/cyber-physical-security.jpeg"
   }
 ];
 
@@ -102,24 +103,64 @@ const Industries = () => {
         {/* Hero Banner */}
         <div className="w-full rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(30,27,75,0.15)] bg-gradient-to-br from-[#1e1b4b] to-[#312e81] h-[300px] lg:h-[400px] relative group transform hover:scale-[1.01] transition-transform duration-700 ease-out mb-20">
           <img 
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1600&auto=format&fit=crop" 
+            src="/ai/images/industries.jpeg" 
             alt="Corporate Industries" 
             className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-50 group-hover:opacity-70 transition-opacity duration-700" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1e1b4b]/90 via-transparent to-transparent"></div>
           
-          <div className="absolute bottom-8 left-8 right-8 flex justify-center lg:justify-start">
-            <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-5 lg:p-6 rounded-2xl shadow-2xl">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg">
-                  <svg className="w-7 h-7 text-[#1e1b4b]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-3xl font-extrabold text-white mb-1">12+ Sectors</div>
-                  <div className="text-sm font-semibold text-indigo-200 uppercase tracking-wider">Custom AI Architectures</div>
-                </div>
+          <div className="absolute bottom-6 left-6 right-6 hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Box 1 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Building2 className="w-6 h-6 text-[#1e1b4b]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">12+ Sectors</div>
+                <div className="text-[11px] font-bold text-indigo-200 uppercase tracking-wider leading-tight">Custom AI</div>
+              </div>
+            </div>
+            {/* Box 2 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Briefcase className="w-6 h-6 text-[#1e1b4b]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">Top 1%</div>
+                <div className="text-[11px] font-bold text-indigo-200 uppercase tracking-wider leading-tight">Industry Experts</div>
+              </div>
+            </div>
+            {/* Box 3 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Globe className="w-6 h-6 text-[#1e1b4b]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">Scale</div>
+                <div className="text-[11px] font-bold text-indigo-200 uppercase tracking-wider leading-tight">Global Reach</div>
+              </div>
+            </div>
+            {/* Box 4 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <ShieldCheck className="w-6 h-6 text-[#1e1b4b]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">100%</div>
+                <div className="text-[11px] font-bold text-indigo-200 uppercase tracking-wider leading-tight">Compliance</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Mobile version (single box) */}
+          <div className="absolute bottom-6 left-6 right-6 flex justify-center md:hidden">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl shadow-xl w-full flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] shrink-0">
+                <Building2 className="w-6 h-6 text-[#1e1b4b]" />
+              </div>
+              <div>
+                <div className="text-xl font-extrabold text-white mb-0.5">12+ Sectors</div>
+                <div className="text-[11px] font-bold text-indigo-200 uppercase tracking-wider">Custom AI</div>
               </div>
             </div>
           </div>

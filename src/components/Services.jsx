@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck, Zap, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import { servicesData as servicesList } from '../data/servicesData';
@@ -30,26 +30,68 @@ const Services = () => {
         {/* Hero Image Banner (Re-using their services.png concept but large) */}
         <div className="w-full rounded-none lg:rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(76,0,255,0.15)] bg-gray-900 h-[300px] lg:h-[400px] relative group transform hover:scale-[1.01] transition-transform duration-700 ease-out mb-20">
           <img 
-            src="/services.png" 
+            src="/ai/services.png" 
             alt="AI Application Development Services" 
             className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity duration-700"
             onError={(e) => {
               // Fallback if local image doesn't exist
-              e.target.src = "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop";
+              e.target.src = "/ai/images/services.jpeg";
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0d00ff]/90 via-[#4c00ff]/30 to-transparent"></div>
           
-          <div className="absolute bottom-8 left-8 right-8 flex justify-center lg:justify-start">
-            <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 lg:p-6 rounded-none sm:rounded-2xl shadow-xl w-full sm:w-auto">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                  <Sparkles className="w-7 h-7 text-[#4c00ff]" />
-                </div>
-                <div>
-                  <div className="text-3xl font-extrabold text-white mb-1">End-to-End</div>
-                  <div className="text-sm font-semibold text-indigo-100 uppercase tracking-wider">AI Engineering Services</div>
-                </div>
+          <div className="absolute bottom-6 left-6 right-6 hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Box 1 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Sparkles className="w-6 h-6 text-[#4c00ff]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">End-to-End</div>
+                <div className="text-[11px] font-bold text-indigo-100 uppercase tracking-wider leading-tight">AI Engineering</div>
+              </div>
+            </div>
+            {/* Box 2 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <ShieldCheck className="w-6 h-6 text-[#4c00ff]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">Enterprise</div>
+                <div className="text-[11px] font-bold text-indigo-100 uppercase tracking-wider leading-tight">Grade Security</div>
+              </div>
+            </div>
+            {/* Box 3 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Zap className="w-6 h-6 text-[#4c00ff]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">Agile</div>
+                <div className="text-[11px] font-bold text-indigo-100 uppercase tracking-wider leading-tight">Rapid Delivery</div>
+              </div>
+            </div>
+            {/* Box 4 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Globe className="w-6 h-6 text-[#4c00ff]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">Global</div>
+                <div className="text-[11px] font-bold text-indigo-100 uppercase tracking-wider leading-tight">Scale Support</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Mobile version (single box) */}
+          <div className="absolute bottom-6 left-6 right-6 flex justify-center md:hidden">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl shadow-xl w-full flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] shrink-0">
+                <Sparkles className="w-6 h-6 text-[#4c00ff]" />
+              </div>
+              <div>
+                <div className="text-xl font-extrabold text-white mb-0.5">End-to-End</div>
+                <div className="text-[11px] font-bold text-indigo-100 uppercase tracking-wider">AI Engineering</div>
               </div>
             </div>
           </div>

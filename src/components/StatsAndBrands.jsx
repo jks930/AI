@@ -20,7 +20,7 @@ const StatsAndBrands = () => {
       data-header-theme="dark"
       data-header-bg="bg-[#180048]/95 backdrop-blur-md"
       className="relative w-full py-16 lg:py-24 overflow-hidden bg-[#180048] bg-cover bg-center"
-      style={{ backgroundImage: "url('/background-img.webp')" }}
+      style={{ backgroundImage: "url('/ai/background-img.webp')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-[#180048]/80 via-transparent to-[#180048]/90"></div>
 

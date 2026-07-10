@@ -9,7 +9,7 @@ import TechnologyDetailsPage from './pages/TechnologyDetailsPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ai">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/service/:slug" element={<ServiceDetailsPage />} />

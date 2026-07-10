@@ -16,10 +16,10 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-3">
             <a href="/" className="inline-block mb-6">
-              <img src="/logoai.svg" alt="logoai" className="h-14 w-auto opacity-100 hover:opacity-100 transition-opacity" />
+              <img src="/ai/logoai.svg" alt="logoai" className="h-14 w-auto opacity-100 hover:opacity-100 transition-opacity" />
             </a>
             <p className="text-gray-400 text-[14px] leading-[1.8] mb-8">
-              Founded in 2016 in Delaware, ITMC Systems began as a software house and has evolved into a next-generation AI & Staffing Transformation company. Today we operate across 5 countries, serve 38+ US states, and combine cutting-edge AI with elite human talent to deliver outcomes — not just outputs.
+              Founded in 2016 in Delaware, ITMC Digital began as a software house and has evolved into a next-generation AI & Staffing Transformation company. Today we operate across 5 countries, serve 38+ US states, and combine cutting-edge AI with elite human talent to deliver outcomes — not just outputs.
             </p>
             {/* Social Icons */}
             <div className="flex items-center gap-4">
@@ -88,7 +88,7 @@ const Footer = () => {
         {/* Bottom Section: Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-[14px]">
-            &copy; {new Date().getFullYear()} ITMC Systems, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} ITMC Digital, Inc. All rights reserved.
           </p>
           <div className="flex gap-6 text-[14px]">
             <a href="/privacy-policy" className="text-gray-500 hover:text-white transition-colors">Privacy Policy</a>

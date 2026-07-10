@@ -163,7 +163,7 @@ const TechnologyDetailsPage = () => {
           </div>
           <div className="w-full lg:w-1/2">
              <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-gray-200">
-               <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1000&q=80" alt="Tech Office" className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" />
+               <img src="/ai/images/technologydetailspage.jpeg" alt="Tech Office" className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" />
                <div className="absolute inset-0 bg-gradient-to-t from-[#0a2540]/90 via-[#0a2540]/20 to-transparent flex items-end p-10">
                  <div>
                     <div className="text-white font-extrabold text-3xl mb-2">150+ Tech Professionals</div>

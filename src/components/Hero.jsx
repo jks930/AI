@@ -13,7 +13,7 @@ const Hero = () => {
             <h1 className="text-[32px] sm:text-[42px] lg:text-[50px] xl:text-[56px] font-extrabold tracking-[-0.03em] leading-[1.1] mb-6 lg:mb-5 text-[#0f172a]">
               <span className="relative inline-block">
                 <span className="absolute -inset-1 blur-xl bg-gradient-to-r from-[#6F00FF]/20 to-[#0D00FF]/20 opacity-50 rounded-lg"></span>
-                <span 
+                <span
                   className="relative bg-clip-text text-transparent bg-gradient-to-r from-[#6F00FF] via-[#9d4edd] to-[#0D00FF]"
                   style={{
                     backgroundSize: '200% auto',
@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-[16px] sm:text-[18px] text-[#475569] mb-8 lg:mb-6 leading-[1.7] lg:leading-[1.8] xl:pr-32 px-2 lg:px-0">
-              At itmcsystem, we partner with modern enterprises to engineer innovative, AI-powered applications. Leveraging Machine Learning, LLMs, and Intelligent Automation, we turn ambitious ideas into scalable digital solutions that accelerate your business growth.
+              At  ITMC Digital, we partner with modern enterprises to engineer innovative, AI-powered applications. Leveraging Machine Learning, LLMs, and Intelligent Automation, we turn ambitious ideas into scalable digital solutions that accelerate your business growth.
             </p>
 
             {/* Checkmarks */}
@@ -63,7 +63,7 @@ const Hero = () => {
           <div className="w-full lg:w-[45%] relative mt-6 lg:mt-0 flex flex-col justify-stretch min-h-[250px] sm:min-h-[300px] z-10 py-0 lg:py-0 px-4 lg:px-0 pb-8 lg:pb-0">
             <div className="relative w-full h-full flex-grow rounded-[20px] lg:rounded-[32px] overflow-hidden shadow-xl lg:shadow-2xl border-4 lg:border-white/40 border-white/40">
               <video
-                src="/h1vedio.mp4"
+                src="/ai/h1vedio.mp4"
                 autoPlay
                 loop
                 muted

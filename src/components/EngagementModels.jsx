@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 const models = [
   {
     title: "Dedicated AI Task Force",
-    description: "At itmcsystem, we utilize designated teams that are based on your own team's needs. These teams have a seamless connection with your existing organizational structure to produce faster results and drive innovation throughout your organization.",
+    description: "At  ITMC Digital, we utilize designated teams that are based on your own team's needs. These teams have a seamless connection with your existing organizational structure to produce faster results and drive innovation throughout your organization.",
     bullets: [
       "Scalable delivery team structure designed around your needs",
       "Complete ownership and continuous delivery",
@@ -14,7 +14,7 @@ const models = [
   },
   {
     title: "Outcome-Driven Project Execution",
-    description: "This model is suited for enterprises with predefined AI initiatives and measurable outcomes. itmcsystem assumes full responsibility for delivery, from planning to deployment.",
+    description: "This model is suited for enterprises with predefined AI initiatives and measurable outcomes.  ITMC Digital assumes full responsibility for delivery, from planning to deployment.",
     bullets: [
       "Structured milestones and timelines",
       "Clear and predictable commercial model",
@@ -24,7 +24,7 @@ const models = [
   },
   {
     title: "AI Strategy, Consulting & Advisory",
-    description: "itmcsystem partners with organizations to define AI vision, evaluate technology choices, and build a roadmap that supports sustainable business growth.",
+    description: " ITMC Digital partners with organizations to define AI vision, evaluate technology choices, and build a roadmap that supports sustainable business growth.",
     bullets: [
       "Business-aligned AI strategy",
       "Technology and architecture planning",
@@ -38,11 +38,11 @@ const EngagementModels = () => {
   return (
     <section className="w-full py-12 lg:py-16 bg-white">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header Section */}
         <div className="text-center max-w-[900px] mx-auto mb-16">
           <h2 className="text-[36px] lg:text-[44px] font-bold text-gray-900 mb-6 leading-tight">
-            itmcsystem AI Engagement Models
+            ITMC Digital AI Engagement Models
           </h2>
           <p className="text-gray-600 text-[16px] lg:text-[18px] leading-[1.7]">
             We provide several engagement models that adjust to your particular business needs, project size, and budget constraints. If you want an in-house dedicated Artificial Intelligence (AI) group, a full-scope complete solution delivery experience, or some strategic consulting services, we will guarantee an integrated approach while delivering a rapid result with measurable outcomes.
@@ -52,8 +52,8 @@ const EngagementModels = () => {
         {/* Cards Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {models.map((model, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="flex flex-col bg-[#fcfbfa] rounded-t-[40px] rounded-b-[16px] shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-transform hover:-translate-y-2 duration-300 relative overflow-hidden border border-gray-100"
             >
               {/* Subtle top gradient to match the design */}
@@ -63,11 +63,11 @@ const EngagementModels = () => {
                 <h3 className="text-[22px] font-bold text-[#4a00ff] text-center mb-6 px-4 leading-snug h-[60px] flex items-center justify-center">
                   {model.title}
                 </h3>
-                
+
                 <p className="text-gray-600 text-[15px] leading-relaxed mb-8 text-center">
                   {model.description}
                 </p>
-                
+
                 <ul className="space-y-4 mb-8">
                   {model.bullets.map((bullet, i) => (
                     <li key={i} className="flex items-start text-left gap-3">

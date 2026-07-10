@@ -59,16 +59,16 @@ const Capabilities = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
-          
+
           {/* Left Column */}
           <div className="w-full lg:w-[45%] flex flex-col pt-4">
             <h2 className="text-[34px] lg:text-[40px] font-extrabold text-gray-900 leading-[1.2] mb-6 tracking-tight">
               Pioneering the Future with Intelligent AI Capabilities
             </h2>
             <p className="text-gray-600 text-[16px] leading-[1.7] mb-10">
-              At itmcsystem, we harness the power of artificial intelligence to deliver solutions that go beyond standard automation. Our advanced capabilities enable businesses to create innovative products, streamline operations, and gain actionable insights from their data.
+              At  ITMC Digital, we harness the power of artificial intelligence to deliver solutions that go beyond standard automation. Our advanced capabilities enable businesses to create innovative products, streamline operations, and gain actionable insights from their data.
             </p>
-            
+
             <div className="rounded-[30px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.1)] border border-gray-100 bg-gradient-to-br from-[#0a45e8] to-[#1e3a8a] h-[400px] lg:h-auto flex-1 relative flex items-center justify-center transform hover:scale-[1.02] transition-transform duration-500 ease-out">
               <div className="absolute inset-0 bg-white/5 opacity-50"></div>
               <div className="text-white/80 font-semibold uppercase tracking-widest text-sm bg-black/20 px-4 py-2 rounded-full backdrop-blur-md">Image Placeholder</div>
@@ -80,18 +80,17 @@ const Capabilities = () => {
             <div className="bg-white rounded-3xl shadow-[0_8px_40px_rgba(0,0,0,0.06)] border border-gray-100 overflow-y-auto custom-scrollbar h-[500px] lg:h-auto lg:absolute lg:inset-0">
               <div className="flex flex-col">
                 {capabilities.map((item, index) => (
-                  <div 
-                    key={index} 
-                    className={`p-7 lg:p-8 hover:bg-gray-50/50 transition-colors duration-500 ease-out group cursor-pointer ${
-                      index !== capabilities.length - 1 ? 'border-b border-dashed border-gray-200' : ''
-                    }`}
+                  <div
+                    key={index}
+                    className={`p-7 lg:p-8 hover:bg-gray-50/50 transition-colors duration-500 ease-out group cursor-pointer ${index !== capabilities.length - 1 ? 'border-b border-dashed border-gray-200' : ''
+                      }`}
                   >
                     <div className="flex items-start">
                       {/* Icon */}
                       <div className="flex-shrink-0 w-12 h-12 bg-[#0a45e8] rounded-xl flex items-center justify-center shadow-md shadow-blue-500/20 transform group-hover:scale-105 transition-transform duration-500 ease-out">
                         <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                       </div>
-                      
+
                       {/* Content */}
                       <div className="ml-5 flex-1">
                         <div className="text-[12px] font-bold text-[#0a45e8] uppercase tracking-widest mb-1.5 opacity-80">
@@ -118,7 +117,7 @@ const Capabilities = () => {
 
         </div>
       </div>
-      
+
       <style jsx>{`
         .custom-scrollbar::-webkit-scrollbar {
           width: 8px;

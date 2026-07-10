@@ -1,96 +1,96 @@
 import React from 'react';
-import { Cpu } from 'lucide-react';
+import { Cpu, Zap, ShieldCheck, TrendingUp, Globe } from 'lucide-react';
 
 const applicationsList = [
   {
     category: "AI Accelerator",
     title: "Advanced Conversational Interfaces",
     description: "Building sophisticated conversational agents that deliver seamless, human-like dialogue, significantly elevating customer satisfaction and engagement levels.",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/advanced-conversational-interfaces.jpeg"
   },
   {
     category: "LLM Accelerator",
     title: "Fully Automated Support Systems",
     description: "Deploying intelligent support architectures to automate routine service workflows, ensuring rapid resolution times and non-stop operational availability.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/fully-automated-support-systems.jpeg"
   },
   {
     category: "RAG Platform",
     title: "Personalized Recommendation Systems",
     description: "Engineering tailored recommendation engines that analyze behavioral data to push highly relevant products, content, and services to individual users.",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/personalized-recommendation-systems.jpeg"
   },
   {
     category: "Mobile Accelerator",
     title: "Fraud Detection & Risk Monitoring",
     description: "Implementing real-time threat detection algorithms that proactively identify anomalies, safeguard financial assets, and minimize enterprise risk.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/fraud-detection-risk-monitoring.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Predictive Maintenance Solutions",
     description: "Utilizing advanced telemetry analysis to forecast machinery degradation before failures occur, maximizing uptime and optimizing maintenance schedules.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/predictive-maintenance-solutions.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "AI in Healthcare & Diagnostics",
     description: "Empowering medical institutions with precise diagnostic models that accelerate patient care and streamline complex administrative workflows.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/ai-in-healthcare-diagnostics.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Financial Forecasting & Analytics",
     description: "Deploying robust financial models that process massive datasets to project market trends and guide strategic investment decisions.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/financial-forecasting-analytics.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Smart Demand Forecasting",
     description: "Applying predictive intelligence to anticipate market demand, allowing businesses to optimize inventory levels and slash production waste.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/smart-demand-forecasting.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "AI-Optimized Supply Chains",
     description: "Architecting resilient supply chain networks enhanced by machine learning, providing end-to-end visibility and autonomous decision capabilities.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/ai-optimized-supply-chains.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Sentiment Analysis & Brand Monitoring",
     description: "Monitoring digital ecosystems to capture public sentiment and customer feedback, enabling brands to dynamically refine their marketing strategies.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/sentiment-analysis-brand-monitoring.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Real-Time Language Translation",
     description: "Breaking down global communication barriers through instantaneous, highly accurate translation engines that power international business expansion.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/real-time-language-translation.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Computer Vision Solutions",
     description: "Deploying sophisticated visual recognition models capable of complex object tracking and video analytics across retail, security, and industrial sectors.",
-    image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/computer-vision-solutions.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Edge AI & Smart Devices",
     description: "Processing intelligence directly at the edge to enable ultra-low latency decision making and resilient functionality for connected smart devices.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/edge-ai-smart-devices.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "AI-Powered Marketing Automation",
     description: "Supercharging campaigns via intelligent automation tools that perfectly segment audiences and dynamically optimize ad spend for maximum ROI.",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/ai-powered-marketing-automation.jpeg"
   },
   {
     category: "Cloud Accelerator",
     title: "Voice-Enabled AI Systems",
     description: "Crafting intuitive voice-first interfaces that facilitate hands-free operations, dramatically improving accessibility and user convenience.",
-    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=600&auto=format&fit=crop"
+    image: "/ai/images/voice-enabled-ai-systems.jpeg"
   }
 ];
 
@@ -120,24 +120,64 @@ const Applications = () => {
         {/* Hero Image Banner */}
         <div className="w-full rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(10,69,232,0.15)] bg-gradient-to-br from-[#2f68ff] to-[#0a45e8] h-[300px] lg:h-[400px] relative group transform hover:scale-[1.01] transition-transform duration-700 ease-out mb-20">
           <img 
-            src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1600&auto=format&fit=crop" 
+            src="/ai/images/applications.jpeg" 
             alt="AI Applications" 
             className="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:opacity-80 transition-opacity duration-700" 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a45e8]/90 via-transparent to-transparent"></div>
           
-          <div className="absolute bottom-8 left-8 right-8 flex justify-center lg:justify-start">
-            <div className="bg-white/10 backdrop-blur-lg border border-white/20 p-5 lg:p-6 rounded-2xl shadow-xl">
-              <div className="flex items-center gap-5">
-                <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                  <svg className="w-7 h-7 text-[#0a45e8]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-3xl font-extrabold text-white mb-1">500+</div>
-                  <div className="text-sm font-semibold text-blue-100 uppercase tracking-wider">Enterprise Deployments</div>
-                </div>
+          <div className="absolute bottom-6 left-6 right-6 hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* Box 1 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Zap className="w-6 h-6 text-[#0a45e8]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">500+</div>
+                <div className="text-[11px] font-bold text-blue-100 uppercase tracking-wider leading-tight">Deployments</div>
+              </div>
+            </div>
+            {/* Box 2 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <ShieldCheck className="w-6 h-6 text-[#0a45e8]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">99.9%</div>
+                <div className="text-[11px] font-bold text-blue-100 uppercase tracking-wider leading-tight">System Uptime</div>
+              </div>
+            </div>
+            {/* Box 3 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <TrendingUp className="w-6 h-6 text-[#0a45e8]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">10x</div>
+                <div className="text-[11px] font-bold text-blue-100 uppercase tracking-wider leading-tight">Efficiency Gain</div>
+              </div>
+            </div>
+            {/* Box 4 */}
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 lg:p-5 rounded-2xl shadow-xl flex items-center gap-4 group hover:bg-white/20 transition-all cursor-default">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] group-hover:scale-110 transition-transform shrink-0">
+                <Globe className="w-6 h-6 text-[#0a45e8]" />
+              </div>
+              <div>
+                <div className="text-[20px] font-extrabold text-white mb-0.5 leading-tight">24/7</div>
+                <div className="text-[11px] font-bold text-blue-100 uppercase tracking-wider leading-tight">Active Monitoring</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Mobile version (single box) */}
+          <div className="absolute bottom-6 left-6 right-6 flex justify-center md:hidden">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl shadow-xl w-full flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.3)] shrink-0">
+                <Zap className="w-6 h-6 text-[#0a45e8]" />
+              </div>
+              <div>
+                <div className="text-xl font-extrabold text-white mb-0.5">500+</div>
+                <div className="text-[11px] font-bold text-blue-100 uppercase tracking-wider">Enterprise Deployments</div>
               </div>
             </div>
           </div>

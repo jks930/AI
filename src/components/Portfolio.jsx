@@ -14,7 +14,7 @@ const portfolios = [
       { value: "55%", label: "Increase in active users" }
     ],
     buttonText: "View Case Study",
-    image: "/img1.jpg",
+    image: "img1.jpg",
     imgBg: "bg-blue-50"
   },
   {
@@ -29,7 +29,7 @@ const portfolios = [
       { value: "4.8/5", label: "User Satisfaction" }
     ],
     buttonText: "View Portfolio",
-    image: "/img2.webp",
+    image: "img2.webp",
     imgBg: "bg-red-50"
   },
   {
@@ -44,7 +44,7 @@ const portfolios = [
       { value: "4.7/5", label: "Customer Satisfaction" }
     ],
     buttonText: "View Portfolio",
-    image: "/img3.jpg",
+    image: "img3.jpg",
     imgBg: "bg-gray-50"
   },
   {
@@ -59,7 +59,7 @@ const portfolios = [
       { value: "4.8/5", label: "User Satisfaction" }
     ],
     buttonText: "View Portfolio",
-    image: "/img4.jpg",
+    image: "img4.jpg",
     imgBg: "bg-green-50"
   }
 ];

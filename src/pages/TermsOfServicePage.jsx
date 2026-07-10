@@ -22,7 +22,7 @@ const TermsOfServicePage = () => {
       <div className="flex-grow py-16 lg:py-24 max-w-4xl mx-auto px-4 sm:px-6 w-full">
         <div className="prose prose-lg prose-blue max-w-none text-gray-600">
           <p className="lead text-xl text-gray-800 font-medium mb-8">
-            These Terms of Service constitute a legally binding agreement made between you and ITMC Systems, Inc. concerning your access to and use of our website and services.
+            These Terms of Service constitute a legally binding agreement made between you and ITMC Digital, Inc. concerning your access to and use of our website and services.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">1. Acceptance of Terms</h2>
@@ -49,7 +49,7 @@ const TermsOfServicePage = () => {
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">6. Contact Information</h2>
           <p className="mb-4">In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:</p>
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-            <p className="font-semibold text-gray-900">ITMC Systems, Inc.</p>
+            <p className="font-semibold text-gray-900">ITMC Digital, Inc.</p>
             <p>Parsippany, New Jersey, US</p>
             <p>Email: <a href="mailto:info@itmcsystems.com" className="text-blue-600 hover:underline">info@itmcsystems.com</a></p>
           </div>

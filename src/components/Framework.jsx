@@ -53,13 +53,13 @@ const Framework = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (!sectionRef.current) return;
-      
+
       const { top, height } = sectionRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      
+
       const scrollPx = -top;
       const maxScroll = height - windowHeight;
-      
+
       if (scrollPx < 0) {
         setActiveStep(0);
       } else if (scrollPx >= maxScroll) {
@@ -73,7 +73,7 @@ const Framework = () => {
 
     window.addEventListener('scroll', handleScroll);
     handleScroll();
-    
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -82,14 +82,14 @@ const Framework = () => {
 
   return (
     <section className="bg-white w-full relative">
-      
+
       {/* Intro Section */}
       <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 pb-10 relative z-10">
         <h2 className="text-[36px] lg:text-[50px] font-extrabold text-gray-900 leading-[1.15] mb-8 tracking-tight">
           Our Proven Framework for Delivering Successful AI Solutions
         </h2>
         <p className="text-gray-600 text-[18px] lg:text-[20px] leading-[1.6] max-w-[900px] mx-auto">
-          At itmcsystem, we use a methodical, results-oriented approach to deliver AI application development services that create value. As a leading AI development company in USA, we operate as if every project were an enterprise in the same way, whereby we complete each stage with the intention of reducing risk and maximising efficiencies.
+          At  ITMC Digital, we use a methodical, results-oriented approach to deliver AI application development services that create value. As a leading AI development company in USA, we operate as if every project were an enterprise in the same way, whereby we complete each stage with the intention of reducing risk and maximising efficiencies.
         </p>
       </div>
 
@@ -97,27 +97,27 @@ const Framework = () => {
       <div ref={sectionRef} className="relative h-[600vh] w-full">
         <div className="sticky top-0 h-screen w-full flex flex-col justify-center">
           <div className="max-w-[1400px] mx-auto w-full relative flex h-full items-center">
-            
+
             {/* Left Column (Outer Layer Circle + Small Brain) */}
             <div className="absolute left-[-15%] lg:left-[0%] xl:left-[2%] top-1/2 -translate-y-1/2 w-[400px] h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[550px] xl:h-[550px] bg-[#eef0ff] rounded-full flex items-center justify-center z-0 overflow-hidden shadow-inner">
-              <img 
-                src="/Background-e1771697998449.webp" 
-                alt="AI Brain" 
+              <img
+                src="/ai/Background-e1771697998449.webp"
+                alt="AI Brain"
                 className="w-[45%] lg:w-[50%] h-auto object-contain spin-image-animation relative -left-4"
               />
             </div>
 
             {/* Right Column (Dynamic Step Content) */}
             <div className="w-full ml-auto lg:w-[60%] xl:w-[55%] h-full flex flex-col justify-center min-h-[400px] relative z-10 px-4 sm:px-6 lg:px-0">
-              
-              <div 
-                key={activeStep} 
+
+              <div
+                key={activeStep}
                 className="animate-fade-in-up w-full max-w-[800px]"
               >
                 <h3 className="text-[28px] lg:text-[38px] font-extrabold text-gray-900 leading-[1.2] mb-8">
                   {currentStep.num} {currentStep.title}
                 </h3>
-                
+
                 {/* Banner Box */}
                 <div className="relative mb-10 flex items-center">
                   {/* Glowing Icon Overlapping left edge */}
@@ -132,12 +132,12 @@ const Framework = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Pill Tags */}
                 <div className="flex flex-wrap gap-4 pl-4 lg:pl-8">
                   {currentStep.pills.map((pill, i) => (
-                    <div 
-                      key={i} 
+                    <div
+                      key={i}
                       className="bg-[#5a20ff] text-white px-5 py-2.5 rounded-full flex items-center gap-2 shadow-md hover:bg-[#4610d9] transition-colors cursor-pointer"
                     >
                       <CheckCircle2 className="w-4 h-4 text-white" />
@@ -150,11 +150,10 @@ const Framework = () => {
               {/* Progress Indicators (Dots) */}
               <div className="mt-16 flex gap-3 pl-4 lg:pl-8">
                 {steps.map((_, i) => (
-                  <div 
-                    key={i} 
-                    className={`h-2 rounded-full transition-all duration-300 ${
-                      i === activeStep ? 'w-10 bg-[#5a20ff]' : 'w-2 bg-gray-300'
-                    }`}
+                  <div
+                    key={i}
+                    className={`h-2 rounded-full transition-all duration-300 ${i === activeStep ? 'w-10 bg-[#5a20ff]' : 'w-2 bg-gray-300'
+                      }`}
                   />
                 ))}
               </div>
@@ -164,7 +163,7 @@ const Framework = () => {
           </div>
         </div>
       </div>
-      
+
       <style jsx>{`
         @keyframes spin-image-frames {
           from { transform: rotate(0deg); }

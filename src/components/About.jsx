@@ -22,19 +22,19 @@ const About = () => {
           
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-block px-4 py-1.5 rounded-full bg-[#eef0ff] text-[#4a00ff] font-semibold text-[14px] mb-6 border border-[#d6dcff]">
-              ITMC Systems, Inc.
+              ITMC Digital, Inc.
             </div>
             <h2 className="text-[36px] lg:text-[46px] font-extrabold text-gray-900 leading-[1.2] mb-6 tracking-tight">
               Our Identity & <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4a00ff] to-[#0d6efd]">Mission</span>
             </h2>
             <p className="text-gray-600 text-[16px] lg:text-[18px] leading-[1.8]">
-              Established in 2016 in Delaware, ITMC Systems has grown into a leading AI and workforce transformation powerhouse. Spanning <strong className="text-gray-900">5 countries</strong> and over <strong className="text-gray-900">38 US states</strong>, we fuse state-of-the-art artificial intelligence with top-tier human expertise to guarantee measurable business results.
+              Established in 2016 in Delaware, ITMC Digital has grown into a leading AI and workforce transformation powerhouse. Spanning <strong className="text-gray-900">5 countries</strong> and over <strong className="text-gray-900">38 US states</strong>, we fuse state-of-the-art artificial intelligence with top-tier human expertise to guarantee measurable business results.
             </p>
           </div>
 
           <div className="w-full relative max-w-5xl mx-auto mb-16">
             <div className="w-full h-[300px] md:h-[450px] rounded-[32px] overflow-hidden shadow-2xl relative">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="Team Collaboration" className="w-full h-full object-cover" />
+              <img src="/ai/images/about.jpeg" alt="Team Collaboration" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0a1a5c]/80 via-transparent to-transparent"></div>
             </div>
 
@@ -84,7 +84,7 @@ const About = () => {
               </p>
               
               <div className="w-full rounded-[24px] overflow-hidden shadow-xl relative bg-[#080014] flex-grow min-h-[250px]">
-                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="Claude AI Specialisation" className="w-full h-full object-cover opacity-80 absolute inset-0" />
+                <img src="/ai/images/about-1.jpeg" alt="Claude AI Specialisation" className="w-full h-full object-cover opacity-80 absolute inset-0" />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#4a00ff]/40 to-[#0d6efd]/40 mix-blend-overlay"></div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md border border-white/30 p-5 rounded-2xl shadow-2xl">
                   <span className="text-4xl">✨</span>

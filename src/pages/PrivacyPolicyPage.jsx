@@ -6,7 +6,7 @@ const PrivacyPolicyPage = () => {
   return (
     <div className="font-sans antialiased text-gray-900 bg-white selection:bg-blue-100 selection:text-blue-900 flex flex-col min-h-screen">
       <Header />
-      
+
       {/* Top Banner */}
       <div className="pt-32 pb-16 lg:pt-40 lg:pb-24 bg-[#080014] text-center relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -22,7 +22,7 @@ const PrivacyPolicyPage = () => {
       <div className="flex-grow py-16 lg:py-24 max-w-4xl mx-auto px-4 sm:px-6 w-full">
         <div className="prose prose-lg prose-blue max-w-none text-gray-600">
           <p className="lead text-xl text-gray-800 font-medium mb-8">
-            At ITMC Systems, Inc., we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (www.itmcsystems.com) or engage with our services.
+            At ITMC Digital, Inc., we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (www. ITMC Digitals.com) or engage with our services.
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">1. Information We Collect</h2>
@@ -51,7 +51,7 @@ const PrivacyPolicyPage = () => {
           <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-4">5. Contact Us</h2>
           <p className="mb-4">If you have questions or comments about this Privacy Policy, please contact us at:</p>
           <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
-            <p className="font-semibold text-gray-900">ITMC Systems, Inc.</p>
+            <p className="font-semibold text-gray-900">ITMC Digital, Inc.</p>
             <p>Parsippany, New Jersey, US</p>
             <p>Email: <a href="mailto:info@itmcsystems.com" className="text-blue-600 hover:underline">info@itmcsystems.com</a></p>
             <p>Phone: +1 405 651 8989</p>

@@ -3,7 +3,7 @@ import React from 'react';
 const blogs = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
+    image: "/ai/images/about-1.jpeg",
     date: "Jun 3, 2026",
     readTime: "12 min read",
     title: "Top AI Agent Use Cases for Enterprises: Expert Guide 2026",
@@ -11,7 +11,7 @@ const blogs = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop",
+    image: "/ai/images/top-ai-agent-use-cases-for-enterprises-expert-guide-2026.jpeg",
     date: "May 29, 2026",
     readTime: "14 min read",
     title: "Top AI Trends in 2026: 10 Trends Transforming Businesses Worldwide",
@@ -19,7 +19,7 @@ const blogs = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1684369175836-70e9ce324866?q=80&w=800&auto=format&fit=crop",
+    image: "/ai/images/top-ai-trends-in-2026-10-trends-transforming-businesses-worldwide.jpeg",
     date: "May 27, 2026",
     readTime: "11 min read",
     title: "AI Agent Development Cost: Comprehensive Guide 2026",

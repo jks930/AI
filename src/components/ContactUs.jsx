@@ -36,7 +36,7 @@ const ContactUs = () => {
           <div className="w-full lg:w-[45%] p-10 lg:p-16 flex flex-col justify-between relative overflow-hidden">
             {/* Background Image */}
             <img
-              src="/background-get-in-touch-scaled.webp"
+              src="/ai/background-get-in-touch-scaled.webp"
               alt="Background"
               className="absolute inset-0 w-full h-full object-cover z-0"
             />
@@ -45,8 +45,8 @@ const ContactUs = () => {
               {/* Profile/Logo Image */}
               <div className="w-28 h-28 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md flex items-center justify-center p-4 mb-8 shadow-lg">
                 <img
-                  src="/logoai.svg"
-                  alt="ITMC Systems"
+                  src="/ai/logoai.svg"
+                  alt="ITMC Digital"
                   className="w-full h-auto object-contain brightness-0 invert"
                 />
               </div>
