@@ -12,6 +12,7 @@ function App() {
     <Router basename="/ai">
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/services/:slug" element={<ServiceDetailsPage />} />
         <Route path="/service/:slug" element={<ServiceDetailsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />

@@ -1,5 +1,7 @@
 export const technologiesData = {
   "ai": {
+    seoTitle: "Artificial Intelligence Services & AI Technology Solutions",
+    seoDescription: "Explore artificial intelligence solutions with AI development services, machine learning, automation, and generative AI to build smarter digital products.",
     title: "Artificial Intelligence",
     heroTitle: "Empowering Business with Advanced AI",
     heroDescription: "Leverage the power of Artificial Intelligence to automate processes, gain predictive insights, and build smarter applications tailored to your enterprise needs.",
@@ -11,6 +13,8 @@ export const technologiesData = {
     ]
   },
   "generative-ai": {
+    seoTitle: "Generative AI Consulting and Development Services",
+    seoDescription: "Explore Generative AI Solutions with custom AI model development, LLM integration, and enterprise automation to transform workflows and customer experiences.",
     title: "Generative AI",
     heroTitle: "Create at the Speed of Thought",
     heroDescription: "Unleash creativity and productivity with Generative AI. We integrate LLMs and diffusion models to automate content creation, code generation, and complex problem-solving.",
@@ -22,6 +26,8 @@ export const technologiesData = {
     ]
   },
   "ml": {
+    seoTitle: "Machine Learning Software Development Services",
+    seoDescription: "Machine Learning Development Services that build predictive analytics, intelligent automation, and AI-powered solutions to improve efficiency and business growth.",
     title: "Machine Learning",
     heroTitle: "Data-Driven Machine Learning Solutions",
     heroDescription: "Transform raw data into actionable intelligence. Our ML models learn from historical patterns to optimize decision-making across your entire organization.",
@@ -33,6 +39,8 @@ export const technologiesData = {
     ]
   },
   "blockchain": {
+    seoTitle: "Blockchain Development Services for Secure Digital Solutions",
+    seoDescription: "Blockchain development services for secure apps, smart contracts, and decentralized solutions that improve transparency, efficiency, and business growth.",
     title: "Blockchain",
     heroTitle: "Secure & Transparent Decentralization",
     heroDescription: "Build trust and eliminate intermediaries. We develop scalable blockchain architectures, smart contracts, and decentralized applications (dApps) for the Web3 era.",
@@ -44,6 +52,8 @@ export const technologiesData = {
     ]
   },
   "ar-vr": {
+    seoTitle: "AR VR Application Development Services for Every Industry",
+    seoDescription: "Explore the future of immersive technology with AR VR app development services, combining augmented reality, virtual reality, and 3D innovation.",
     title: "AR/VR",
     heroTitle: "Immersive Extended Reality Experiences",
     heroDescription: "Bridge the physical and digital worlds. From virtual training simulations to augmented retail experiences, we build AR/VR solutions that captivate users.",
@@ -55,6 +65,8 @@ export const technologiesData = {
     ]
   },
   "visionos": {
+    seoTitle: "VisionOS Developers for Apple Vision Pro Applications",
+    seoDescription: "Build immersive Apple Vision Pro apps with expert VisionOS app development services for spatial computing, XR experiences, & next-generation business solutions.",
     title: "VisionOS",
     heroTitle: "Pioneering Spatial Computing",
     heroDescription: "Be at the forefront of the spatial computing revolution. We design and develop intuitive, breathtaking applications natively for Apple VisionOS.",
@@ -66,6 +78,8 @@ export const technologiesData = {
     ]
   },
   "unity": {
+    seoTitle: "Unity Development Services for 3D, AR & VR Experiences",
+    seoDescription: "Develop immersive games, 3D applications, and AR/VR experiences with professional Unity development services for engaging cross-platform digital solutions.",
     title: "Unity 3D",
     heroTitle: "Interactive 3D & Game Development",
     heroDescription: "Harness the power of the world's leading real-time 3D engine. We build cross-platform games, simulations, and interactive experiences using Unity.",
@@ -77,6 +91,8 @@ export const technologiesData = {
     ]
   },
   "iot": {
+    seoTitle: "Leading IoT App Development Company for Digital Innovation",
+    seoDescription: "Transform operations with IoT application development services for connected devices, smart apps, automation, and scalable IoT solutions built for businesses.",
     title: "Internet of Things (IoT)",
     heroTitle: "Connecting the Physical World",
     heroDescription: "Transform hardware into smart, connected ecosystems. We build scalable IoT platforms that process massive amounts of sensor data in real-time.",
@@ -88,6 +104,8 @@ export const technologiesData = {
     ]
   },
   "metaverse": {
+    seoTitle: "Metaverse Development Company for Web3 Virtual Experiences",
+    seoDescription: "Build immersive digital experiences with expert metaverse development services, creating virtual ecosystems, interactive platforms, and next-gen solutions.",
     title: "Metaverse",
     heroTitle: "Building the Next Era of the Internet",
     heroDescription: "Establish your brand's presence in virtual worlds. We create interoperable, persistent 3D spaces where users can socialize, play, and transact.",
@@ -99,6 +117,8 @@ export const technologiesData = {
     ]
   },
   "big-data": {
+    seoTitle: "Big Data Development Company for Modern Data Platforms",
+    seoDescription: "Choose Big Data development services to analyze complex information, improve data management, and gain actionable insights through advanced analytics.",
     title: "Big Data",
     heroTitle: "Unlocking Value at Petabyte Scale",
     heroDescription: "Don't drown in data—swim in insights. We architect robust Big Data pipelines that ingest, process, and analyze massive datasets effortlessly.",
@@ -110,6 +130,8 @@ export const technologiesData = {
     ]
   },
   "data-science": {
+    seoTitle: "Leading Data Science Company for Enterprise Solutions",
+    seoDescription: "Get reliable data science services focused on analytics, machine learning, and predictive insights to help businesses solve challenges and make decisions.",
     title: "Data Science",
     heroTitle: "Actionable Intelligence & Analytics",
     heroDescription: "Turn complex numbers into clear strategic direction. Our data scientists use statistical modeling to uncover hidden opportunities in your business.",
@@ -121,6 +143,8 @@ export const technologiesData = {
     ]
   },
   "business-intelligence": {
+    seoTitle: "Advanced Business Intelligence Solutions for Enterprises",
+    seoDescription: "Improve business performance with business intelligence services that deliver real-time analytics, interactive dashboards, and actionable insights from complex data.",
     title: "Business Intelligence",
     heroTitle: "Visualizing Success with BI",
     heroDescription: "Empower your executives with real-time dashboards. We build beautiful, interactive BI solutions that make complex data easily understandable.",
@@ -132,6 +156,8 @@ export const technologiesData = {
     ]
   },
   "nft": {
+    seoTitle: "NFT Development Services for Secure Digital Asset Solutions",
+    seoDescription: "Choose expert NFT development services for secure token creation, NFT marketplaces, and blockchain solutions that enhance digital asset experiences today.",
     title: "NFT & Digital Assets",
     heroTitle: "Tokenizing Digital Ownership",
     heroDescription: "Enter the digital economy. We develop smart contracts, minting engines, and custom marketplaces for Non-Fungible Tokens and digital collectibles.",
@@ -143,6 +169,8 @@ export const technologiesData = {
     ]
   },
   "chatbot": {
+    seoTitle: "AI Chatbot Development Company for Automated Customer Support",
+    seoDescription: "Transform customer interactions with AI chatbot development services designed to automate tasks, provide instant support, and create better user experiences.",
     title: "Conversational Chatbots",
     heroTitle: "Next-Generation Conversational Interfaces",
     heroDescription: "Deliver 24/7 customer support and lead generation. We build intelligent chatbots powered by NLP that understand context and resolve issues autonomously.",
@@ -154,6 +182,8 @@ export const technologiesData = {
     ]
   },
   "cloud": {
+    seoTitle: "Cloud Computing Services for Secure Digital Infrastructure",
+    seoDescription: "Explore cloud computing services designed for secure cloud infrastructure, faster migration, and efficient enterprise solutions that support business needs.",
     title: "Cloud Computing",
     heroTitle: "Scalable Cloud Architecture",
     heroDescription: "Modernize your infrastructure. We provide end-to-end cloud migration, architecture design, and management on AWS, Azure, and Google Cloud.",
@@ -165,6 +195,8 @@ export const technologiesData = {
     ]
   },
   "smart-tv": {
+    seoTitle: "Smart TV Application Development Services | ITMC Digital",
+    seoDescription: "Custom smart TV app development services for OTT, live streaming, and connected TV platforms that deliver fast performance and engaging user experiences.",
     title: "Smart TV Apps",
     heroTitle: "Conquering the Living Room",
     heroDescription: "Deliver high-quality media to the biggest screen in the house. We build performant, intuitive streaming apps for tvOS, Roku, Tizen, and WebOS.",
@@ -176,6 +208,8 @@ export const technologiesData = {
     ]
   },
   "nlp": {
+    seoTitle: "Natural Language Processing Services | AI NLP Solutions",
+    seoDescription: "Natural language processing services that automate customer support, analyze text, and uncover insights from unstructured data to help businesses work faster.",
     title: "Natural Language Processing",
     heroTitle: "Understanding Human Language",
     heroDescription: "Extract meaning from unstructured text. Our NLP solutions enable sentiment analysis, document summarization, and highly accurate language translation.",
@@ -187,6 +221,8 @@ export const technologiesData = {
     ]
   },
   "rpa": {
+    seoTitle: "Robotic Process Automation Company | RPA Services",
+    seoDescription: "Explore Robotic Process Automation Services that simplify complex workflows, reduce manual effort, and deliver faster, more reliable business processes.",
     title: "Robotic Process Automation",
     heroTitle: "Automating the Mundane with RPA",
     heroDescription: "Free your workforce from repetitive tasks. We deploy software robots that mimic human actions to handle high-volume, rules-based processes flawlessly.",
@@ -198,6 +234,8 @@ export const technologiesData = {
     ]
   },
   "digital-ethics": {
+    seoTitle: "Digital Ethics Services for Responsible AI & Compliance",
+    seoDescription: "Digital Ethics Consulting helps you build responsible AI with practical governance, risk management, and compliance strategies that earn customer trust.",
     title: "Digital Ethics & Compliance",
     heroTitle: "Responsible AI & Data Ethics",
     heroDescription: "Build technology you can trust. We implement robust frameworks to ensure your AI models are fair, transparent, and compliant with global privacy laws.",
@@ -209,6 +247,8 @@ export const technologiesData = {
     ]
   },
   "devops": {
+    seoTitle: "Leading DevOps Consulting Company for Cloud Solutions",
+    seoDescription: "From CI/CD to cloud automation, our DevOps Services help you release software faster, reduce operational risks, & improve application reliability. Contact us.",
     title: "DevOps & MLOps",
     heroTitle: "Accelerating Deployment with DevOps",
     heroDescription: "Unify development and operations. We implement CI/CD pipelines and infrastructure-as-code to ensure fast, reliable, and secure software releases.",
@@ -220,6 +260,8 @@ export const technologiesData = {
     ]
   },
   "odoo": {
+    seoTitle: "Odoo Development Company for End-to-End ERP Solutions",
+    seoDescription: "Get Odoo development services that simplify ERP management, connect your business systems, automate daily operations, and support sustainable business growth.",
     title: "Odoo ERP",
     heroTitle: "Comprehensive Odoo ERP Implementations",
     heroDescription: "Unify your entire business on a single platform. We customize, deploy, and support Odoo ERP solutions tailored specifically to your operational needs.",

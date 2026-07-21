@@ -1,10 +1,11 @@
-import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const PrivacyPolicyPage = () => {
   return (
     <div className="font-sans antialiased text-gray-900 bg-white selection:bg-blue-100 selection:text-blue-900 flex flex-col min-h-screen">
+      <SEO title="Privacy Policy | ITMC Digital" description="Privacy Policy for ITMC Digital AI services and applications." />
       <Header />
 
       {/* Top Banner */}

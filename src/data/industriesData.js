@@ -1,5 +1,7 @@
 export const industriesData = {
   "on-demand": {
+    seoTitle: "On-Demand App Development Services | ITMC Digital",
+    seoDescription: "Choose on demand app development services to build secure, user-friendly apps for modern businesses. Proven expertise and quality delivery. Contact us now!",
     title: "On-Demand Services",
     heroTitle: "Transforming On-Demand Services with AI",
     heroDescription: "Deliver faster, smarter, and hyper-personalized on-demand experiences. From ride-sharing to food delivery, our AI solutions optimize routing, predict demand, and enhance customer satisfaction.",
@@ -11,6 +13,8 @@ export const industriesData = {
     ]
   },
   "enterprise": {
+    seoTitle: "Enterprise AI Solutions for Digital Transformation",
+    seoDescription: "Enterprise AI solutions for workflow automation, predictive analytics, and business intelligence. Work with a trusted partner. Contact us to discuss your needs.",
     title: "Enterprise Solutions",
     heroTitle: "Next-Gen AI for the Modern Enterprise",
     heroDescription: "Scale your operations and break down data silos. We build secure, robust AI architectures that integrate seamlessly with your existing enterprise workflows.",
@@ -22,6 +26,8 @@ export const industriesData = {
     ]
   },
   "finance": {
+    seoTitle: "Finance Software Development Services for Banks & FinTech",
+    seoDescription: "Trusted finance software development company delivering secure fintech solutions, digital banking platforms, and compliance-ready systems. Contact us today!",
     title: "Finance & Banking",
     heroTitle: "Intelligent Finance & FinTech Solutions",
     heroDescription: "Revolutionize financial services with predictive analytics, algorithmic trading, and unparalleled fraud detection systems tailored for modern banking.",
@@ -33,6 +39,8 @@ export const industriesData = {
     ]
   },
   "e-commerce": {
+    seoTitle: "Trusted eCommerce App Development Company for Digital Growth",
+    seoDescription: "Choose ITMC Digital for ecommerce app development services that deliver secure online shopping apps with modern features and intuitive user experiences.",
     title: "E-commerce & Retail",
     heroTitle: "AI-Driven E-Commerce Experiences",
     heroDescription: "Boost conversions and customer loyalty. Our AI solutions power hyper-personalized shopping experiences, visual search, and intelligent inventory management.",
@@ -44,6 +52,8 @@ export const industriesData = {
     ]
   },
   "game": {
+    seoTitle: "Game App Development Services for Engaging Digital Platforms",
+    seoDescription: "Get expert game app development services for immersive mobile, AR/VR, and multiplayer games with scalable AI solutions. Build engaging gaming experiences today.",
     title: "Gaming",
     heroTitle: "Pushing the Boundaries of Gaming with AI",
     heroDescription: "Create immersive worlds, dynamic NPCs, and adaptive difficulty systems that keep players engaged longer than ever before.",
@@ -55,6 +65,8 @@ export const industriesData = {
     ]
   },
   "healthcare": {
+    seoTitle: "Trusted Healthcare App Development Company | ITMC Digital",
+    seoDescription: "Transform patient care with AI healthcare solutions, predictive analytics, and hospital automation. Build secure, scalable medical systems for better outcomes.",
     title: "Healthcare",
     heroTitle: "AI Innovations in Healthcare",
     heroDescription: "Improve patient outcomes and streamline medical administration. We build compliant AI tools for diagnostics, patient monitoring, and clinical research.",
@@ -66,6 +78,8 @@ export const industriesData = {
     ]
   },
   "travel": {
+    seoTitle: "Travel App Development Company | ITMC Digital",
+    seoDescription: "Create innovative travel experiences with AI-driven travel app development services for personalized journeys, smart automation, & improved customer engagement.",
     title: "Travel & Hospitality",
     heroTitle: "Smarter Travel & Hospitality Solutions",
     heroDescription: "Elevate the guest experience. From dynamic pricing engines for airlines to personalized itinerary planners, AI is reshaping how the world travels.",
@@ -77,6 +91,8 @@ export const industriesData = {
     ]
   },
   "logistics": {
+    seoTitle: "Trusted Logistics Software Development Company | ITMC Digital",
+    seoDescription: "Build smarter supply chains with logistics software development services using AI, automation, route optimization, & real-time tracking for efficient operations.",
     title: "Logistics & Supply Chain",
     heroTitle: "Intelligent Supply Chain Management",
     heroDescription: "Mitigate disruptions before they happen. Our AI models provide end-to-end visibility, predictive maintenance, and optimized freight routing.",
@@ -88,6 +104,8 @@ export const industriesData = {
     ]
   },
   "start-up": {
+    seoTitle: "AI Development Company for Startups | ITMC Digital",
+    seoDescription: "Startup app development company specializing in AI solutions, custom app development, MVPs, product engineering, and secure software for innovative startups.",
     title: "Start-Ups",
     heroTitle: "Accelerating Start-Ups with Agile AI",
     heroDescription: "Bring your vision to life faster. We partner with innovative start-ups to build MVPs, integrate powerful APIs, and scale disruptive AI products rapidly.",
@@ -99,6 +117,8 @@ export const industriesData = {
     ]
   },
   "entertainment": {
+    seoTitle: "AI Entertainment Software Development Company | ITMC Digital",
+    seoDescription: "Looking for an AI Development Company? ITMC Digital creates AI entertainment solutions for streaming, gaming, media, & digital content. Talk to our experts.",
     title: "Media & Entertainment",
     heroTitle: "AI in Media & Entertainment",
     heroDescription: "Captivate audiences with personalized content delivery, automated video editing, and AI-generated media assets.",
@@ -110,6 +130,8 @@ export const industriesData = {
     ]
   },
   "real-estate": {
+    seoTitle: "Real Estate AI Development Services for Property Businesses",
+    seoDescription: "Real estate app development services with AI for property management, valuation, predictive analytics, and automation to build secure, scalable solutions.",
     title: "Real Estate",
     heroTitle: "Smart Real Estate & PropTech",
     heroDescription: "Transform property search, valuation, and management. AI brings data-driven precision to one of the world's most valuable asset classes.",
@@ -121,6 +143,8 @@ export const industriesData = {
     ]
   },
   "education": {
+    seoTitle: "Education App Development Services for eLearning Platforms",
+    seoDescription: "Build future-ready learning platforms with education app development services for AI-enabled eLearning, student engagement, LMS integration, and mobile apps.",
     title: "Education & EdTech",
     heroTitle: "Personalizing the Future of Education",
     heroDescription: "Empower students and educators with adaptive learning platforms, automated grading, and intelligent virtual tutors.",
@@ -132,6 +156,8 @@ export const industriesData = {
     ]
   },
   "electric-vehicle": {
+    seoTitle: "AI-Powered Electric Vehicle Software Development Services",
+    seoDescription: "Build innovative EV solutions with electric vehicle software development services for connected vehicles, charging infrastructure, IoT, and smart mobility.",
     title: "Electric Vehicles",
     heroTitle: "Powering the EV Revolution",
     heroDescription: "Optimize battery management, charging networks, and autonomous driving systems with cutting-edge artificial intelligence.",
@@ -143,6 +169,8 @@ export const industriesData = {
     ]
   },
   "automotive": {
+    seoTitle: "Automotive Software Development Services | AI Solutions",
+    seoDescription: "Automotive software development services for businesses looking to develop custom applications, improve processes, and meet changing industry needs.",
     title: "Automotive",
     heroTitle: "AI in the Automotive Industry",
     heroDescription: "From intelligent manufacturing floors to autonomous driving capabilities, AI is redefining the modern vehicle lifecycle.",
@@ -154,6 +182,8 @@ export const industriesData = {
     ]
   },
   "wearable": {
+    seoTitle: "Best Wearable App Development Company for Innovative Apps",
+    seoDescription: "A trusted wearable app development company delivering custom wearable applications with fitness tracking, IoT integration, secure data, and smooth performance.",
     title: "Wearable Technology",
     heroTitle: "Intelligent Wearables & IoT",
     heroDescription: "Turn raw biometric data into actionable health insights. We build lightweight AI models that run efficiently on edge devices.",

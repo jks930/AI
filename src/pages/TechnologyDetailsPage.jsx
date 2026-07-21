@@ -3,6 +3,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { technologiesData } from '../data/technologiesData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { ArrowRight, CheckCircle2, Cpu } from 'lucide-react';
 
 const TechnologyDetailsPage = () => {
@@ -22,6 +23,10 @@ const TechnologyDetailsPage = () => {
 
   return (
     <div className="font-sans antialiased text-gray-900 bg-[#f9fafb] selection:bg-blue-500/30 selection:text-blue-900 flex flex-col min-h-screen">
+      <SEO 
+        title={tech.seoTitle || tech.title} 
+        description={tech.seoDescription || tech.heroDescription} 
+      />
       <Header />
       
       {/* Hero Section */}

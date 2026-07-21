@@ -32,7 +32,7 @@ export default function TransformServices() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {transformServices.map((service, index) => (
             <Link 
-              to={`/service/${service.slug}`}
+              to={`/services/${service.slug}`}
               key={index} 
               className="bg-white rounded-none sm:rounded-[24px] overflow-hidden flex flex-col sm:flex-row group hover:-translate-y-2 transition-all duration-500 shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.2)] cursor-pointer border-y sm:border border-transparent hover:border-blue-200"
             >

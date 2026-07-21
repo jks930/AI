@@ -101,7 +101,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {servicesList.map((service, index) => (
             <Link 
-              to={`/service/${service.slug}`}
+              to={`/services/${service.slug}`}
               key={index} 
               className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 hover:border-[#a5b4fc] hover:shadow-[0_20px_40px_rgba(76,0,255,0.1)] transition-all duration-300 group flex flex-col h-full"
             >

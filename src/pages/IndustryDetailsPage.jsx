@@ -3,6 +3,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { industriesData } from '../data/industriesData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const IndustryDetailsPage = () => {
@@ -22,6 +23,10 @@ const IndustryDetailsPage = () => {
 
   return (
     <div className="font-sans antialiased text-gray-900 bg-[#f9fafb] selection:bg-blue-500/30 selection:text-blue-900 flex flex-col min-h-screen">
+      <SEO 
+        title={industry.seoTitle || industry.title} 
+        description={industry.seoDescription || industry.heroDescription} 
+      />
       <Header />
       
       {/* Hero Section */}

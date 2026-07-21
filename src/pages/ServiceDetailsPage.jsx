@@ -4,6 +4,7 @@ import { ArrowUpRight, CheckCircle2, Zap, Shield, BarChart, Cpu } from 'lucide-r
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Cta from '../components/Cta';
+import SEO from '../components/SEO';
 import { servicesData, transformData } from '../data/servicesData';
 
 const ServiceDetailsPage = () => {
@@ -30,6 +31,10 @@ const ServiceDetailsPage = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-600 selection:text-white">
+      <SEO 
+        title={service.seoTitle || service.title} 
+        description={service.seoDescription || service.description || service.heroDescription} 
+      />
       <Header />
 
       <main className="pt-[80px] lg:pt-[100px]">

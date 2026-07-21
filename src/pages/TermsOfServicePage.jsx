@@ -1,10 +1,11 @@
-import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const TermsOfServicePage = () => {
   return (
     <div className="font-sans antialiased text-gray-900 bg-white selection:bg-blue-100 selection:text-blue-900 flex flex-col min-h-screen">
+      <SEO title="Terms of Service | ITMC Digital" description="Terms of Service for ITMC Digital AI services and applications." />
       <Header />
       
       {/* Top Banner */}
