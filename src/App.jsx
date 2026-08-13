@@ -4,8 +4,7 @@ import HomePage from './pages/HomePage';
 import ServiceDetailsPage from './pages/ServiceDetailsPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
-import IndustryDetailsPage from './pages/IndustryDetailsPage';
-import TechnologyDetailsPage from './pages/TechnologyDetailsPage';
+import UnifiedDetailsPage from './pages/UnifiedDetailsPage';
 
 function App() {
   return (
@@ -16,8 +15,7 @@ function App() {
         <Route path="/service/:slug" element={<ServiceDetailsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-        <Route path="/industry/:slug" element={<IndustryDetailsPage />} />
-        <Route path="/technology/:slug" element={<TechnologyDetailsPage />} />
+        <Route path="/:slug" element={<UnifiedDetailsPage />} />
       </Routes>
     </Router>
   );

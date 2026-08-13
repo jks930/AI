@@ -3,15 +3,23 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { industriesData } from '../data/industriesData';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ContactUs from '../components/ContactUs';
 import SEO from '../components/SEO';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const IndustryDetailsPage = () => {
   const { slug } = useParams();
   
-  // Scroll to top when page changes
+  // Scroll to top or contact on load/slug change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.location.hash === '#contact') {
+      setTimeout(() => {
+        const el = document.getElementById('contact');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [slug]);
 
   const industry = industriesData[slug];
@@ -26,6 +34,7 @@ const IndustryDetailsPage = () => {
       <SEO 
         title={industry.seoTitle || industry.title} 
         description={industry.seoDescription || industry.heroDescription} 
+        schemas={industry.schemas}
       />
       <Header />
       
@@ -55,9 +64,9 @@ const IndustryDetailsPage = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link to="/#contact" className="bg-[#4c00ff] hover:bg-[#3d00cc] text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-[0_4px_20px_rgba(76,0,255,0.4)] hover:shadow-[0_8px_30px_rgba(76,0,255,0.6)] hover:-translate-y-1 flex items-center justify-center gap-2">
+              <a href="#contact" className="bg-[#4c00ff] hover:bg-[#3d00cc] text-white px-8 py-3.5 rounded-full font-bold transition-all shadow-[0_4px_20px_rgba(76,0,255,0.4)] hover:shadow-[0_8px_30px_rgba(76,0,255,0.6)] hover:-translate-y-1 flex items-center justify-center gap-2">
                 Consult an Expert <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -183,11 +192,13 @@ const IndustryDetailsPage = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-blue-50/50"></div>
         <div className="max-w-[1000px] mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-5xl font-bold text-[#0a2540] mb-8">Ready to Transform Your {industry.title} Business?</h2>
-          <Link to="/#contact" className="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-[#4c00ff] rounded-full hover:bg-[#3d00cc] transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(76,0,255,0.3)]">
+          <a href="#contact" className="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-[#4c00ff] rounded-full hover:bg-[#3d00cc] transition-all duration-300 hover:scale-105 shadow-[0_10px_30px_rgba(76,0,255,0.3)]">
             Start Your Project Today
-          </Link>
+          </a>
         </div>
       </section>
+
+      <ContactUs />
 
       <Footer />
       

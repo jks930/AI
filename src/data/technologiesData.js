@@ -1,5 +1,53 @@
 export const technologiesData = {
-  "ai": {
+  "artificial-intelligence": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/artificial-intelligence",
+              "name": "Artificial Intelligence"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Artificial Intelligence Services & AI Technology Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Explore artificial intelligence solutions with AI development services, machine learning, automation, and generative AI to build smarter digital products.",
+        "url": "https://itmcdigital.com/ai/artificial-intelligence",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/artificial-intelligence",
+        "areaServed": "Global",
+        "serviceType": [
+          "Artificial Intelligence Development"
+        ]
+      }
+    ],
     seoTitle: "Artificial Intelligence Services & AI Technology Solutions",
     seoDescription: "Explore artificial intelligence solutions with AI development services, machine learning, automation, and generative AI to build smarter digital products.",
     title: "Artificial Intelligence",
@@ -13,6 +61,54 @@ export const technologiesData = {
     ]
   },
   "generative-ai": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/generative-ai",
+              "name": "Generative AI"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Generative AI Consulting and Development Services",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Explore Generative AI Solutions with custom AI model development, LLM integration, and enterprise automation to transform workflows and customer experiences.",
+        "url": "https://itmcdigital.com/ai/generative-ai",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/generative-ai",
+        "areaServed": "Global",
+        "serviceType": [
+          "Generative AI Development"
+        ]
+      }
+    ],
     seoTitle: "Generative AI Consulting and Development Services",
     seoDescription: "Explore Generative AI Solutions with custom AI model development, LLM integration, and enterprise automation to transform workflows and customer experiences.",
     title: "Generative AI",
@@ -25,7 +121,55 @@ export const technologiesData = {
       { title: "Custom LLM Fine-Tuning", description: "Adapt powerful foundational models like GPT-4 to understand your specific domain terminology." }
     ]
   },
-  "ml": {
+  "machine-learning": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/machine-learning",
+              "name": "Machine Learning"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Machine Learning Software Development Services",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Machine Learning Development Services that build predictive analytics, intelligent automation, and AI-powered solutions to improve efficiency and business growth.",
+        "url": "https://itmcdigital.com/ai/machine-learning",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/machine-learning",
+        "areaServed": "Global",
+        "serviceType": [
+          "Machine Learning Development"
+        ]
+      }
+    ],
     seoTitle: "Machine Learning Software Development Services",
     seoDescription: "Machine Learning Development Services that build predictive analytics, intelligent automation, and AI-powered solutions to improve efficiency and business growth.",
     title: "Machine Learning",
@@ -39,6 +183,54 @@ export const technologiesData = {
     ]
   },
   "blockchain": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/blockchain",
+              "name": "Blockchain"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Blockchain Development Services for Secure Digital Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Blockchain development services for secure apps, smart contracts, and decentralized solutions that improve transparency, efficiency, and business growth.",
+        "url": "https://itmcdigital.com/ai/blockchain",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/blockchain",
+        "areaServed": "Global",
+        "serviceType": [
+          "Blockchain Development Services"
+        ]
+      }
+    ],
     seoTitle: "Blockchain Development Services for Secure Digital Solutions",
     seoDescription: "Blockchain development services for secure apps, smart contracts, and decentralized solutions that improve transparency, efficiency, and business growth.",
     title: "Blockchain",
@@ -52,6 +244,58 @@ export const technologiesData = {
     ]
   },
   "ar-vr": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/ar-vr",
+              "name": "AR/VR"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AR VR Application Development Services for Every Industry",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Explore the future of immersive technology with AR VR app development services, combining augmented reality, virtual reality, and 3D innovation.",
+        "url": "https://itmcdigital.com/ai/ar-vr",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/ar-vr",
+        "areaServed": "Global",
+        "serviceType": [
+          "AR VR Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "AR VR Application Development Services for Every Industry",
     seoDescription: "Explore the future of immersive technology with AR VR app development services, combining augmented reality, virtual reality, and 3D innovation.",
     title: "AR/VR",
@@ -65,6 +309,58 @@ export const technologiesData = {
     ]
   },
   "visionos": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/visionos",
+              "name": "VisionOS"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "VisionOS Developers for Apple Vision Pro Applications",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Build immersive Apple Vision Pro apps with expert VisionOS app development services for spatial computing, XR experiences, & next-generation business solutions.",
+        "url": "https://itmcdigital.com/ai/visionos",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/visionos",
+        "areaServed": "Global",
+        "serviceType": [
+          "VisionOS App Development"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "VisionOS Developers for Apple Vision Pro Applications",
     seoDescription: "Build immersive Apple Vision Pro apps with expert VisionOS app development services for spatial computing, XR experiences, & next-generation business solutions.",
     title: "VisionOS",
@@ -78,6 +374,58 @@ export const technologiesData = {
     ]
   },
   "unity": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/unity",
+              "name": "Unity"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Unity Development Services for 3D, AR & VR Experiences",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Develop immersive games, 3D applications, and AR/VR experiences with professional Unity development services for engaging cross-platform digital solutions.",
+        "url": "https://itmcdigital.com/ai/unity",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/unity",
+        "areaServed": "Global",
+        "serviceType": [
+          "Unity Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Unity Development Services for 3D, AR & VR Experiences",
     seoDescription: "Develop immersive games, 3D applications, and AR/VR experiences with professional Unity development services for engaging cross-platform digital solutions.",
     title: "Unity 3D",
@@ -91,6 +439,58 @@ export const technologiesData = {
     ]
   },
   "iot": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/iot",
+              "name": "IoT"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Leading IoT App Development Company for Digital Innovation",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Transform operations with IoT application development services for connected devices, smart apps, automation, and scalable IoT solutions built for businesses.",
+        "url": "https://itmcdigital.com/ai/iot",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/iot",
+        "areaServed": "Global",
+        "serviceType": [
+          "IoT Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Leading IoT App Development Company for Digital Innovation",
     seoDescription: "Transform operations with IoT application development services for connected devices, smart apps, automation, and scalable IoT solutions built for businesses.",
     title: "Internet of Things (IoT)",
@@ -104,6 +504,58 @@ export const technologiesData = {
     ]
   },
   "metaverse": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/metaverse",
+              "name": "Metaverse"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Metaverse Development Company for Web3 Virtual Experiences",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Build immersive digital experiences with expert metaverse development services, creating virtual ecosystems, interactive platforms, and next-gen solutions.",
+        "url": "https://itmcdigital.com/ai/metaverse",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/metaverse",
+        "areaServed": "Global",
+        "serviceType": [
+          "Metaverse Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Metaverse Development Company for Web3 Virtual Experiences",
     seoDescription: "Build immersive digital experiences with expert metaverse development services, creating virtual ecosystems, interactive platforms, and next-gen solutions.",
     title: "Metaverse",
@@ -117,6 +569,58 @@ export const technologiesData = {
     ]
   },
   "big-data": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/big-data",
+              "name": "Big Data"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Big Data Development Company for Modern Data Platforms",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Choose Big Data development services to analyze complex information, improve data management, and gain actionable insights through advanced analytics.",
+        "url": "https://itmcdigital.com/ai/big-data",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/big-data",
+        "areaServed": "Global",
+        "serviceType": [
+          "Big Data Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Big Data Development Company for Modern Data Platforms",
     seoDescription: "Choose Big Data development services to analyze complex information, improve data management, and gain actionable insights through advanced analytics.",
     title: "Big Data",
@@ -130,6 +634,58 @@ export const technologiesData = {
     ]
   },
   "data-science": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/data-science",
+              "name": "Data Science"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Leading Data Science Company for Enterprise Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Get reliable data science services focused on analytics, machine learning, and predictive insights to help businesses solve challenges and make decisions.",
+        "url": "https://itmcdigital.com/ai/data-science",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/data-science",
+        "areaServed": "Global",
+        "serviceType": [
+          "Data Science Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Leading Data Science Company for Enterprise Solutions",
     seoDescription: "Get reliable data science services focused on analytics, machine learning, and predictive insights to help businesses solve challenges and make decisions.",
     title: "Data Science",
@@ -143,6 +699,58 @@ export const technologiesData = {
     ]
   },
   "business-intelligence": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/business-intelligence",
+              "name": "Business Intelligence"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Advanced Business Intelligence Solutions for Enterprises",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Improve business performance with business intelligence services that deliver real-time analytics, interactive dashboards, and actionable insights from complex data.",
+        "url": "https://itmcdigital.com/ai/business-intelligence",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/business-intelligence",
+        "areaServed": "Global",
+        "serviceType": [
+          "Business Intelligence Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Advanced Business Intelligence Solutions for Enterprises",
     seoDescription: "Improve business performance with business intelligence services that deliver real-time analytics, interactive dashboards, and actionable insights from complex data.",
     title: "Business Intelligence",
@@ -156,6 +764,58 @@ export const technologiesData = {
     ]
   },
   "nft": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/nft",
+              "name": "NFT"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "NFT Development Services for Secure Digital Asset Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Choose expert NFT development services for secure token creation, NFT marketplaces, and blockchain solutions that enhance digital asset experiences today.",
+        "url": "https://itmcdigital.com/ai/nft",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/nft",
+        "areaServed": "Global",
+        "serviceType": [
+          "NFT Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "NFT Development Services for Secure Digital Asset Solutions",
     seoDescription: "Choose expert NFT development services for secure token creation, NFT marketplaces, and blockchain solutions that enhance digital asset experiences today.",
     title: "NFT & Digital Assets",
@@ -169,6 +829,58 @@ export const technologiesData = {
     ]
   },
   "chatbot": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/chatbot",
+              "name": "Chatbot"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Chatbot Development Company for Automated Customer Support",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Transform customer interactions with AI chatbot development services designed to automate tasks, provide instant support, and create better user experiences.",
+        "url": "https://itmcdigital.com/ai/chatbot",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/chatbot",
+        "areaServed": "Global",
+        "serviceType": [
+          "Chatbot Development"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "AI Chatbot Development Company for Automated Customer Support",
     seoDescription: "Transform customer interactions with AI chatbot development services designed to automate tasks, provide instant support, and create better user experiences.",
     title: "Conversational Chatbots",
@@ -182,6 +894,58 @@ export const technologiesData = {
     ]
   },
   "cloud": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/cloud",
+              "name": "Cloud"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Cloud Computing Services for Secure Digital Infrastructure",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Explore cloud computing services designed for secure cloud infrastructure, faster migration, and efficient enterprise solutions that support business needs.",
+        "url": "https://itmcdigital.com/ai/cloud",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/cloud",
+        "areaServed": "Global",
+        "serviceType": [
+          "Cloud Computing Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Cloud Computing Services for Secure Digital Infrastructure",
     seoDescription: "Explore cloud computing services designed for secure cloud infrastructure, faster migration, and efficient enterprise solutions that support business needs.",
     title: "Cloud Computing",
@@ -195,6 +959,58 @@ export const technologiesData = {
     ]
   },
   "smart-tv": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/smart-tv",
+              "name": "Smart TV"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Smart TV Application Development Services | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Custom smart TV app development services for OTT, live streaming, and connected TV platforms that deliver fast performance and engaging user experiences.",
+        "url": "https://itmcdigital.com/ai/smart-tv",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/smart-tv",
+        "areaServed": "Global",
+        "serviceType": [
+          "Smart TV App Development"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Smart TV Application Development Services | ITMC Digital",
     seoDescription: "Custom smart TV app development services for OTT, live streaming, and connected TV platforms that deliver fast performance and engaging user experiences.",
     title: "Smart TV Apps",
@@ -208,6 +1024,58 @@ export const technologiesData = {
     ]
   },
   "nlp": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/nlp",
+              "name": "NLP"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Natural Language Processing Services | AI NLP Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Natural language processing services that automate customer support, analyze text, and uncover insights from unstructured data to help businesses work faster.",
+        "url": "https://itmcdigital.com/ai/nlp",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/nlp",
+        "areaServed": "Global",
+        "serviceType": [
+          "Natural Language Processing Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Natural Language Processing Services | AI NLP Solutions",
     seoDescription: "Natural language processing services that automate customer support, analyze text, and uncover insights from unstructured data to help businesses work faster.",
     title: "Natural Language Processing",
@@ -221,6 +1089,59 @@ export const technologiesData = {
     ]
   },
   "rpa": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/rpa",
+              "name": "RPA"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Robotic Process Automation Company | RPA Services",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Explore Robotic Process Automation Services that simplify complex workflows, reduce manual effort, and deliver faster, more reliable business processes.",
+        "url": "https://itmcdigital.com/ai/rpa",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/rpa",
+        "areaServed": "Global",
+        "serviceType": [
+          "Robotic Process Automation",
+          "RPA Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Robotic Process Automation Company | RPA Services",
     seoDescription: "Explore Robotic Process Automation Services that simplify complex workflows, reduce manual effort, and deliver faster, more reliable business processes.",
     title: "Robotic Process Automation",
@@ -234,6 +1155,59 @@ export const technologiesData = {
     ]
   },
   "digital-ethics": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/digital-ethics",
+              "name": "Digital Ethics"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Digital Ethics Services for Responsible AI & Compliance",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Digital Ethics Consulting helps you build responsible AI with practical governance, risk management, and compliance strategies that earn customer trust.",
+        "url": "https://itmcdigital.com/ai/digital-ethics",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/digital-ethics",
+        "areaServed": "Global",
+        "serviceType": [
+          "Digital Ethics Services",
+          "Digital Ethics Consulting"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Digital Ethics Services for Responsible AI & Compliance",
     seoDescription: "Digital Ethics Consulting helps you build responsible AI with practical governance, risk management, and compliance strategies that earn customer trust.",
     title: "Digital Ethics & Compliance",
@@ -247,6 +1221,59 @@ export const technologiesData = {
     ]
   },
   "devops": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/devops",
+              "name": "DevOps"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Leading DevOps Consulting Company for Cloud Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "From CI/CD to cloud automation, our DevOps Services help you release software faster, reduce operational risks, & improve application reliability. Contact us.",
+        "url": "https://itmcdigital.com/ai/devops",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/devops",
+        "areaServed": "Global",
+        "serviceType": [
+          "DevOps Consulting",
+          "DevOps Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Leading DevOps Consulting Company for Cloud Solutions",
     seoDescription: "From CI/CD to cloud automation, our DevOps Services help you release software faster, reduce operational risks, & improve application reliability. Contact us.",
     title: "DevOps & MLOps",
@@ -260,6 +1287,58 @@ export const technologiesData = {
     ]
   },
   "odoo": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/odoo",
+              "name": "Odoo"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Odoo Development Company for End-to-End ERP Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Get Odoo development services that simplify ERP management, connect your business systems, automate daily operations, and support sustainable business growth.",
+        "url": "https://itmcdigital.com/ai/odoo",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/odoo",
+        "areaServed": "Global",
+        "serviceType": [
+          "Odoo Development Services"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      }
+    ],
     seoTitle: "Odoo Development Company for End-to-End ERP Solutions",
     seoDescription: "Get Odoo development services that simplify ERP management, connect your business systems, automate daily operations, and support sustainable business growth.",
     title: "Odoo ERP",

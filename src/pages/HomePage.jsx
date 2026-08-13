@@ -49,7 +49,65 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans selection:bg-blue-600 selection:text-white">
-      <SEO title={seoInfo.title} description={seoInfo.description} />
+      <SEO 
+        title={seoInfo.title} 
+        description={seoInfo.description} 
+        schemas={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://itmcdigital.com/#organization",
+            "name": "ITMC Digital",
+            "url": "https://itmcdigital.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://itmcdigital.com/itmc-digital-logo.png"
+            },
+            "description": "ITMC Digital helps businesses innovate with AI Solution, Product Development, and digital engineering services that drive growth, efficiency, and long-term success.",
+            "email": "info@itmcsystems.com",
+            "telephone": "+91 9311228902",
+            "areaServed": "Global",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "18th Floor, Galaxy Blue Sapphire Plaza, Office Number - TS 1901, TS 1902, TS1903 and TS1904, 95-5, Sector 4, Haibatpur",
+              "addressLocality": "Greater Noida",
+              "addressRegion": "Uttar Pradesh",
+              "postalCode": "201016",
+              "addressCountry": "IN"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "Sales",
+              "telephone": "+91 9311228902",
+              "email": "info@itmcsystems.com",
+              "areaServed": "Global",
+              "availableLanguage": [
+                "English"
+              ]
+            },
+            "sameAs": [
+              "https://www.linkedin.com/company/itmcs-systems",
+              "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+            ],
+            "knowsAbout": [
+              "Artificial Intelligence",
+              "AI Development",
+              "Generative AI",
+              "Digital Transformation",
+              "Digital Engineering",
+              "Product Development",
+              "IT Consulting",
+              "Cybersecurity",
+              "Machine Learning",
+              "Software Development",
+              "Web Development",
+              "Mobile App Development",
+              "Cloud Solutions",
+              "Enterprise Solutions"
+            ]
+          }
+        ]}
+      />
       <Header />
 
       <main>

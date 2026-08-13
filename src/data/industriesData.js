@@ -1,5 +1,53 @@
 export const industriesData = {
   "on-demand": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/on-demand",
+              "name": "On-Demand"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "On-Demand App Development Services | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Choose on demand app development services to build secure, user-friendly apps for modern businesses. Proven expertise and quality delivery. Contact us now!",
+        "url": "https://itmcdigital.com/ai/on-demand",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/on-demand",
+        "areaServed": "Global",
+        "serviceType": [
+          "On-Demand App Development"
+        ]
+      }
+    ],
     seoTitle: "On-Demand App Development Services | ITMC Digital",
     seoDescription: "Choose on demand app development services to build secure, user-friendly apps for modern businesses. Proven expertise and quality delivery. Contact us now!",
     title: "On-Demand Services",
@@ -13,6 +61,55 @@ export const industriesData = {
     ]
   },
   "enterprise": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/enterprise",
+              "name": "Enterprise"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Enterprise AI Solutions for Digital Transformation",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Enterprise AI solutions for workflow automation, predictive analytics, and business intelligence. Work with a trusted partner. Contact us to discuss your needs.",
+        "url": "https://itmcdigital.com/ai/enterprise",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/enterprise",
+        "areaServed": "Global",
+        "serviceType": [
+          "Enterprise AI Solutions",
+          "Enterprise AI Development"
+        ]
+      }
+    ],
     seoTitle: "Enterprise AI Solutions for Digital Transformation",
     seoDescription: "Enterprise AI solutions for workflow automation, predictive analytics, and business intelligence. Work with a trusted partner. Contact us to discuss your needs.",
     title: "Enterprise Solutions",
@@ -26,6 +123,55 @@ export const industriesData = {
     ]
   },
   "finance": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/finance",
+              "name": "Finance"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Finance Software Development Services for Banks & FinTech",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Trusted finance software development company delivering secure fintech solutions, digital banking platforms, and compliance-ready systems. Contact us today!",
+        "url": "https://itmcdigital.com/ai/finance",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/finance",
+        "areaServed": "Global",
+        "serviceType": [
+          "AI Solutions for Financial Services",
+          "FinTech Development"
+        ]
+      }
+    ],
     seoTitle: "Finance Software Development Services for Banks & FinTech",
     seoDescription: "Trusted finance software development company delivering secure fintech solutions, digital banking platforms, and compliance-ready systems. Contact us today!",
     title: "Finance & Banking",
@@ -39,6 +185,55 @@ export const industriesData = {
     ]
   },
   "e-commerce": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/e-commerce",
+              "name": "eCommerce"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Trusted eCommerce App Development Company for Digital Growth",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Choose ITMC Digital for ecommerce app development services that deliver secure online shopping apps with modern features and intuitive user experiences.",
+        "url": "https://itmcdigital.com/ai/e-commerce",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/e-commerce",
+        "areaServed": "Global",
+        "serviceType": [
+          "eCommerce App Development",
+          "AI-Powered E-commerce Development"
+        ]
+      }
+    ],
     seoTitle: "Trusted eCommerce App Development Company for Digital Growth",
     seoDescription: "Choose ITMC Digital for ecommerce app development services that deliver secure online shopping apps with modern features and intuitive user experiences.",
     title: "E-commerce & Retail",
@@ -52,6 +247,54 @@ export const industriesData = {
     ]
   },
   "game": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/game",
+              "name": "Game"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Game App Development Services for Engaging Digital Platforms",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Get expert game app development services for immersive mobile, AR/VR, and multiplayer games with scalable AI solutions. Build engaging gaming experiences today.",
+        "url": "https://itmcdigital.com/ai/game",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/game",
+        "areaServed": "Global",
+        "serviceType": [
+          "Game App Development Services"
+        ]
+      }
+    ],
     seoTitle: "Game App Development Services for Engaging Digital Platforms",
     seoDescription: "Get expert game app development services for immersive mobile, AR/VR, and multiplayer games with scalable AI solutions. Build engaging gaming experiences today.",
     title: "Gaming",
@@ -65,6 +308,55 @@ export const industriesData = {
     ]
   },
   "healthcare": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/healthcare",
+              "name": "Healthcare"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Trusted Healthcare App Development Company | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Transform patient care with AI healthcare solutions, predictive analytics, and hospital automation. Build secure, scalable medical systems for better outcomes.",
+        "url": "https://itmcdigital.com/ai/healthcare",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/healthcare",
+        "areaServed": "Global",
+        "serviceType": [
+          "Healthcare Software Development",
+          "Healthcare Solutions"
+        ]
+      }
+    ],
     seoTitle: "Trusted Healthcare App Development Company | ITMC Digital",
     seoDescription: "Transform patient care with AI healthcare solutions, predictive analytics, and hospital automation. Build secure, scalable medical systems for better outcomes.",
     title: "Healthcare",
@@ -78,6 +370,55 @@ export const industriesData = {
     ]
   },
   "travel": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/travel",
+              "name": "Travel"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Travel App Development Company | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Create innovative travel experiences with AI-driven travel app development services for personalized journeys, smart automation, & improved customer engagement.",
+        "url": "https://itmcdigital.com/ai/travel",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/travel",
+        "areaServed": "Global",
+        "serviceType": [
+          "Travel Software Development",
+          "Travel Application Development"
+        ]
+      }
+    ],
     seoTitle: "Travel App Development Company | ITMC Digital",
     seoDescription: "Create innovative travel experiences with AI-driven travel app development services for personalized journeys, smart automation, & improved customer engagement.",
     title: "Travel & Hospitality",
@@ -91,6 +432,55 @@ export const industriesData = {
     ]
   },
   "logistics": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/logistics",
+              "name": "Logistics"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Trusted Logistics Software Development Company | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Build smarter supply chains with logistics software development services using AI, automation, route optimization, & real-time tracking for efficient operations.",
+        "url": "https://itmcdigital.com/ai/logistics",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/logistics",
+        "areaServed": "Global",
+        "serviceType": [
+          "Logistics Software Development",
+          "AI Logistics Solutions"
+        ]
+      }
+    ],
     seoTitle: "Trusted Logistics Software Development Company | ITMC Digital",
     seoDescription: "Build smarter supply chains with logistics software development services using AI, automation, route optimization, & real-time tracking for efficient operations.",
     title: "Logistics & Supply Chain",
@@ -104,6 +494,54 @@ export const industriesData = {
     ]
   },
   "start-up": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/start-up",
+              "name": "Start-Up"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Development Company for Startups | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Startup app development company specializing in AI solutions, custom app development, MVPs, product engineering, and secure software for innovative startups.",
+        "url": "https://itmcdigital.com/ai/start-up",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/start-up",
+        "areaServed": "Global",
+        "serviceType": [
+          "Technology Solutions for Startups"
+        ]
+      }
+    ],
     seoTitle: "AI Development Company for Startups | ITMC Digital",
     seoDescription: "Startup app development company specializing in AI solutions, custom app development, MVPs, product engineering, and secure software for innovative startups.",
     title: "Start-Ups",
@@ -117,6 +555,55 @@ export const industriesData = {
     ]
   },
   "entertainment": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/entertainment",
+              "name": "Entertainment"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Entertainment Software Development Company | ITMC Digital",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Looking for an AI Development Company? ITMC Digital creates AI entertainment solutions for streaming, gaming, media, & digital content. Talk to our experts.",
+        "url": "https://itmcdigital.com/ai/entertainment",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/entertainment",
+        "areaServed": "Global",
+        "serviceType": [
+          "Entertainment App Development",
+          "Entertainment Technology Solutions"
+        ]
+      }
+    ],
     seoTitle: "AI Entertainment Software Development Company | ITMC Digital",
     seoDescription: "Looking for an AI Development Company? ITMC Digital creates AI entertainment solutions for streaming, gaming, media, & digital content. Talk to our experts.",
     title: "Media & Entertainment",
@@ -130,6 +617,55 @@ export const industriesData = {
     ]
   },
   "real-estate": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/real-estate",
+              "name": "Real Estate"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Real Estate AI Development Services for Property Businesses",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Real estate app development services with AI for property management, valuation, predictive analytics, and automation to build secure, scalable solutions.",
+        "url": "https://itmcdigital.com/ai/real-estate",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/real-estate",
+        "areaServed": "Global",
+        "serviceType": [
+          "Real Estate Software Development",
+          "Real Estate App Development"
+        ]
+      }
+    ],
     seoTitle: "Real Estate AI Development Services for Property Businesses",
     seoDescription: "Real estate app development services with AI for property management, valuation, predictive analytics, and automation to build secure, scalable solutions.",
     title: "Real Estate",
@@ -143,6 +679,54 @@ export const industriesData = {
     ]
   },
   "education": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/education",
+              "name": "Education"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Education App Development Services for eLearning Platforms",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Build future-ready learning platforms with education app development services for AI-enabled eLearning, student engagement, LMS integration, and mobile apps.",
+        "url": "https://itmcdigital.com/ai/education",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/education",
+        "areaServed": "Global",
+        "serviceType": [
+          "Education App Development Services"
+        ]
+      }
+    ],
     seoTitle: "Education App Development Services for eLearning Platforms",
     seoDescription: "Build future-ready learning platforms with education app development services for AI-enabled eLearning, student engagement, LMS integration, and mobile apps.",
     title: "Education & EdTech",
@@ -156,6 +740,54 @@ export const industriesData = {
     ]
   },
   "electric-vehicle": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/electric-vehicle",
+              "name": "Electric Vehicle"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI-Powered Electric Vehicle Software Development Services",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Build innovative EV solutions with electric vehicle software development services for connected vehicles, charging infrastructure, IoT, and smart mobility.",
+        "url": "https://itmcdigital.com/ai/electric-vehicle",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/electric-vehicle",
+        "areaServed": "Global",
+        "serviceType": [
+          "Electric Vehicle Software Development"
+        ]
+      }
+    ],
     seoTitle: "AI-Powered Electric Vehicle Software Development Services",
     seoDescription: "Build innovative EV solutions with electric vehicle software development services for connected vehicles, charging infrastructure, IoT, and smart mobility.",
     title: "Electric Vehicles",
@@ -169,6 +801,54 @@ export const industriesData = {
     ]
   },
   "automotive": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/automotive",
+              "name": "Automotive"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Automotive Software Development Services | AI Solutions",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "Automotive software development services for businesses looking to develop custom applications, improve processes, and meet changing industry needs.",
+        "url": "https://itmcdigital.com/ai/automotive",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/automotive",
+        "areaServed": "Global",
+        "serviceType": [
+          "Automotive Software Development"
+        ]
+      }
+    ],
     seoTitle: "Automotive Software Development Services | AI Solutions",
     seoDescription: "Automotive software development services for businesses looking to develop custom applications, improve processes, and meet changing industry needs.",
     title: "Automotive",
@@ -182,6 +862,54 @@ export const industriesData = {
     ]
   },
   "wearable": {
+    "schemas": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://itmcdigital.com/#organization",
+        "url": "https://itmcdigital.com/",
+        "name": "ITMC Digital",
+        "sameAs": [
+          "https://www.linkedin.com/company/itmcs-systems",
+          "https://www.facebook.com/people/ITMC-Systems-Inc/61580620094746/"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/",
+              "name": "AI"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://itmcdigital.com/ai/wearable",
+              "name": "Wearable"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Best Wearable App Development Company for Innovative Apps",
+        "provider": { "@id": "https://itmcdigital.com/#organization" },
+        "description": "A trusted wearable app development company delivering custom wearable applications with fitness tracking, IoT integration, secure data, and smooth performance.",
+        "url": "https://itmcdigital.com/ai/wearable",
+        "mainEntityOfPage": "https://itmcdigital.com/ai/wearable",
+        "areaServed": "Global",
+        "serviceType": [
+          "Wearable App Development"
+        ]
+      }
+    ],
     seoTitle: "Best Wearable App Development Company for Innovative Apps",
     seoDescription: "A trusted wearable app development company delivering custom wearable applications with fitness tracking, IoT integration, secure data, and smooth performance.",
     title: "Wearable Technology",

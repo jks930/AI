@@ -5,4 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/ai/',
   plugins: [react()],
+  server: {
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/ai\/.*$/, to: '/ai/index.html' }
+      ]
+    }
+  }
 })

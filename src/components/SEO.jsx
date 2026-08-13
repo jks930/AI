@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const SEO = ({ title, description, canonical }) => {
+const SEO = ({ title, description, canonical, noIndex = false, schemas }) => {
   useEffect(() => {
     // Update the document title
     if (title) {
@@ -20,6 +20,18 @@ const SEO = ({ title, description, canonical }) => {
       }
     }
 
+    // Update or create robots tag
+    let metaRobots = document.querySelector('meta[name="robots"]');
+    const robotsContent = noIndex ? 'noindex, nofollow' : 'index, follow';
+    if (metaRobots) {
+      metaRobots.setAttribute('content', robotsContent);
+    } else {
+      metaRobots = document.createElement('meta');
+      metaRobots.setAttribute('name', 'robots');
+      metaRobots.setAttribute('content', robotsContent);
+      document.head.appendChild(metaRobots);
+    }
+
     // Update or create canonical tag
     const canonicalUrl = canonical || `https://itmcdigital.com${window.location.pathname}${window.location.hash || ''}`;
     let linkCanonical = document.querySelector('link[rel="canonical"]');
@@ -31,9 +43,18 @@ const SEO = ({ title, description, canonical }) => {
       linkCanonical.setAttribute('href', canonicalUrl);
       document.head.appendChild(linkCanonical);
     }
-  }, [title, description, canonical]);
-
-  return null;
+    // Update or create schema tags
+    const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
+    existingSchemas.forEach(tag => tag.remove());
+    if (schemas && schemas.length > 0) {
+      schemas.forEach(schema => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+      });
+    }
+  }, [title, description, canonical, noIndex, schemas]);  return null;
 };
 
 export default SEO;

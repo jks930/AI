@@ -4,16 +4,24 @@ import { ArrowUpRight, CheckCircle2, Zap, Shield, BarChart, Cpu } from 'lucide-r
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Cta from '../components/Cta';
+import ContactUs from '../components/ContactUs';
 import SEO from '../components/SEO';
 import { servicesData, transformData } from '../data/servicesData';
 
 const ServiceDetailsPage = () => {
   const { slug } = useParams();
-  const service = servicesData.find(s => s.slug === slug) || transformData.find(s => s.slug === slug);
+  const service = servicesData.find(s => s.slug === slug || (s.aliases && s.aliases.includes(slug))) || (transformData && transformData.find(s => s.slug === slug || (s.aliases && s.aliases.includes(slug))));
 
-  // Scroll to top on load or when slug changes
+  // Scroll to top or contact on load/slug change
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.location.hash === '#contact') {
+      setTimeout(() => {
+        const el = document.getElementById('contact');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [slug]);
 
   if (!service) {
@@ -34,6 +42,7 @@ const ServiceDetailsPage = () => {
       <SEO 
         title={service.seoTitle || service.title} 
         description={service.seoDescription || service.description || service.heroDescription} 
+        schemas={service.schemas}
       />
       <Header />
 
@@ -123,6 +132,9 @@ const ServiceDetailsPage = () => {
 
         {/* CTA Section imported from components */}
         <Cta />
+
+        {/* Contact Us Section */}
+        <ContactUs />
 
       </main>
 

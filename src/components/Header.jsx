@@ -233,25 +233,25 @@ const Header = () => {
                   {/* Middle Column - Links Grid */}
                   <div className="w-full lg:w-[45%] grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4">
                     <div className="flex flex-col space-y-5">
-                      <a href="/ai/industry/on-demand" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">On-Demand</a>
-                      <a href="/ai/industry/enterprise" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Enterprise</a>
-                      <a href="/ai/industry/finance" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Finance</a>
-                      <a href="/ai/industry/e-commerce" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">E-commerce</a>
-                      <a href="/ai/industry/game" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Game</a>
+                      <a href="/ai/on-demand" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">On-Demand</a>
+                      <a href="/ai/enterprise" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Enterprise</a>
+                      <a href="/ai/finance" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Finance</a>
+                      <a href="/ai/e-commerce" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">E-commerce</a>
+                      <a href="/ai/game" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Game</a>
                     </div>
                     <div className="flex flex-col space-y-5">
-                      <a href="/ai/industry/healthcare" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Healthcare</a>
-                      <a href="/ai/industry/travel" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Travel</a>
-                      <a href="/ai/industry/logistics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Logistics</a>
-                      <a href="/ai/industry/start-up" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Start-Up</a>
-                      <a href="/ai/industry/entertainment" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Entertainment</a>
+                      <a href="/ai/healthcare" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Healthcare</a>
+                      <a href="/ai/travel" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Travel</a>
+                      <a href="/ai/logistics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Logistics</a>
+                      <a href="/ai/start-up" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Start-Up</a>
+                      <a href="/ai/entertainment" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Entertainment</a>
                     </div>
                     <div className="flex flex-col space-y-5">
-                      <a href="/ai/industry/real-estate" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Real Estate</a>
-                      <a href="/ai/industry/education" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Education</a>
-                      <a href="/ai/industry/electric-vehicle" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Electric Vehicle</a>
-                      <a href="/ai/industry/automotive" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Automotive</a>
-                      <a href="/ai/industry/wearable" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Wearable</a>
+                      <a href="/ai/real-estate" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Real Estate</a>
+                      <a href="/ai/education" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Education</a>
+                      <a href="/ai/electric-vehicle" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Electric Vehicle</a>
+                      <a href="/ai/automotive" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Automotive</a>
+                      <a href="/ai/wearable" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Wearable</a>
                     </div>
                   </div>
 
@@ -294,31 +294,31 @@ const Header = () => {
                   {/* Middle Column - Links Grid */}
                   <div className="w-full lg:w-[45%] grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4">
                     <div className="flex flex-col space-y-4">
-                      <a href="/ai/technology/ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AI</a>
-                      <a href="/ai/technology/generative-ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Generative AI</a>
-                      <a href="/ai/technology/ml" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">ML</a>
-                      <a href="/ai/technology/blockchain" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Blockchain</a>
-                      <a href="/ai/technology/ar-vr" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AR/VR</a>
-                      <a href="/ai/technology/visionos" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">VisionOS</a>
-                      <a href="/ai/technology/unity" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Unity</a>
+                      <a href="/ai/artificial-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AI</a>
+                      <a href="/ai/generative-ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Generative AI</a>
+                      <a href="/ai/machine-learning" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">ML</a>
+                      <a href="/ai/blockchain" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Blockchain</a>
+                      <a href="/ai/ar-vr" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AR/VR</a>
+                      <a href="/ai/visionos" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">VisionOS</a>
+                      <a href="/ai/unity" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Unity</a>
                     </div>
                     <div className="flex flex-col space-y-4">
-                      <a href="/ai/technology/iot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">IoT</a>
-                      <a href="/ai/technology/metaverse" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Metaverse</a>
-                      <a href="/ai/technology/big-data" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Big Data</a>
-                      <a href="/ai/technology/data-science" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Data Science</a>
-                      <a href="/ai/technology/business-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Business Intelligence</a>
-                      <a href="/ai/technology/nft" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NFT</a>
-                      <a href="/ai/technology/chatbot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Chatbot</a>
+                      <a href="/ai/iot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">IoT</a>
+                      <a href="/ai/metaverse" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Metaverse</a>
+                      <a href="/ai/big-data" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Big Data</a>
+                      <a href="/ai/data-science" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Data Science</a>
+                      <a href="/ai/business-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Business Intelligence</a>
+                      <a href="/ai/nft" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NFT</a>
+                      <a href="/ai/chatbot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Chatbot</a>
                     </div>
                     <div className="flex flex-col space-y-4">
-                      <a href="/ai/technology/cloud" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Cloud</a>
-                      <a href="/ai/technology/smart-tv" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Smart TV</a>
-                      <a href="/ai/technology/nlp" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NLP</a>
-                      <a href="/ai/technology/rpa" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">RPA</a>
-                      <a href="/ai/technology/digital-ethics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Digital Ethics</a>
-                      <a href="/ai/technology/devops" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">DevOps</a>
-                      <a href="/ai/technology/odoo" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Odoo</a>
+                      <a href="/ai/cloud" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Cloud</a>
+                      <a href="/ai/smart-tv" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Smart TV</a>
+                      <a href="/ai/nlp" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NLP</a>
+                      <a href="/ai/rpa" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">RPA</a>
+                      <a href="/ai/digital-ethics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Digital Ethics</a>
+                      <a href="/ai/devops" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">DevOps</a>
+                      <a href="/ai/odoo" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Odoo</a>
                     </div>
                   </div>
 
@@ -344,7 +344,7 @@ const Header = () => {
 
           {/* Let's Talk Button */}
           <div className="hidden md:flex items-center">
-            <a href="/ai/#contact" className="bg-[#4c00ff] text-white px-7 py-2.5 rounded-full font-bold hover:bg-[#3d00cc] transition-all shadow-[0_4px_14px_rgba(76,0,255,0.39)] hover:shadow-[0_6px_20px_rgba(76,0,255,0.45)] hover:-translate-y-0.5">
+            <a href="#contact" className="bg-[#4c00ff] text-white px-7 py-2.5 rounded-full font-bold hover:bg-[#3d00cc] transition-all shadow-[0_4px_14px_rgba(76,0,255,0.39)] hover:shadow-[0_6px_20px_rgba(76,0,255,0.45)] hover:-translate-y-0.5">
               Let's Talk
             </a>
           </div>
@@ -427,7 +427,7 @@ const Header = () => {
                     "Healthcare", "Travel", "Logistics", "Start-Up", "Entertainment",
                     "Real Estate", "Education", "Electric Vehicle", "Automotive", "Wearable"
                   ].map(ind => (
-                    <a key={ind} href={`/industry/${ind.toLowerCase().replace(/ /g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
+                    <a key={ind} href={`/ai/${ind.toLowerCase().replace(/ /g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
                       {ind}
                     </a>
                   ))}
@@ -453,7 +453,7 @@ const Header = () => {
                     "IoT", "Metaverse", "Big Data", "Data Science", "Business Intelligence", "NFT", "Chatbot",
                     "Cloud", "Smart TV", "NLP", "RPA", "Digital Ethics", "DevOps", "Odoo"
                   ].map(tech => (
-                    <a key={tech} href={`/technology/${tech.toLowerCase().replace(/[\/\s]/g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
+                    <a key={tech} href={`/ai/${tech.toLowerCase().replace(/[\/\s]/g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
                       {tech}
                     </a>
                   ))}
@@ -464,7 +464,7 @@ const Header = () => {
             <a href="/ai/#portfolio" onClick={() => setIsOpen(false)} className="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 hover:text-[#4c00ff] hover:bg-[#e6ebff]">Portfolio</a>
             <a href="/ai/#blog" onClick={() => setIsOpen(false)} className="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 hover:text-[#4c00ff] hover:bg-[#e6ebff]">Blog</a>
             <a href="/ai/#faq" onClick={() => setIsOpen(false)} className="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 hover:text-[#4c00ff] hover:bg-[#e6ebff]">FAQ</a>
-            <a href="/ai/#contact" onClick={() => setIsOpen(false)} className="block mt-6 text-center bg-[#4c00ff] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#3d00cc] shadow-lg shadow-blue-500/20">
+            <a href="#contact" onClick={() => setIsOpen(false)} className="block mt-6 text-center bg-[#4c00ff] text-white px-6 py-4 rounded-xl font-bold hover:bg-[#3d00cc] shadow-lg shadow-blue-500/20">
               Let's Talk
             </a>
           </div>
