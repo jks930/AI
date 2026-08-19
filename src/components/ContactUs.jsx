@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 
 const ContactUs = () => {
@@ -11,20 +11,128 @@ const ContactUs = () => {
     nda: false,
     captcha: ''
   });
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [captchaParams, setCaptchaParams] = useState({ num1: 6, num2: 1 });
+
+  useEffect(() => {
+    setCaptchaParams({
+      num1: Math.floor(Math.random() * 10) + 1,
+      num2: Math.floor(Math.random() * 10) + 1
+    });
+  }, []);
+
+  const validateField = (name, value) => {
+    let error = "";
+    
+    // Prevent basic XSS
+    if (typeof value === 'string' && (value.includes('<') || value.includes('>'))) {
+      return "Special characters like < and > are not allowed for security reasons";
+    }
+
+    if (name === "fullName") {
+      if (!value.trim()) {
+        error = "Full Name is required";
+      } else if (!/^[a-zA-Z\s]+$/.test(value)) {
+        error = "Name can only contain letters and spaces";
+      }
+    } else if (name === "email") {
+      if (!value.trim()) {
+        error = "Email is required";
+      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+        error = "Invalid email address";
+      }
+    } else if (name === "phone") {
+      if (!value.trim()) {
+        error = "Phone number is required";
+      } else if (!/^[0-9+\-\s()]+$/.test(value)) {
+        error = "Invalid characters in phone number";
+      } else {
+        // Count actual digits to ensure it's a realistic phone number length
+        const digitCount = value.replace(/\D/g, '').length;
+        if (digitCount < 7 || digitCount > 15) {
+          error = "Phone number must have between 7 and 15 digits";
+        }
+      }
+    } else if (name === "budget") {
+      if (!value.trim()) {
+        error = "Please select a budget range";
+      }
+    } else if (name === "captcha") {
+      if (parseInt(value.trim(), 10) !== (captchaParams.num1 + captchaParams.num2)) {
+        error = "Incorrect answer";
+      }
+    }
+    
+    return error;
+  };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === 'checkbox' ? checked : value
-    });
+    const newValue = type === 'checkbox' ? checked : value;
+    
+    setFormData((prev) => ({
+      ...prev,
+      [name]: newValue
+    }));
+
+    // Real-time validation
+    const error = validateField(name, newValue);
+    setErrors((prev) => ({
+      ...prev,
+      [name]: error,
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    alert("Thank you for reaching out! We'll be in touch soon.");
+    const newErrors = {};
+    const fields = ["fullName", "email", "phone", "budget", "captcha"];
+    
+    fields.forEach(field => {
+      const error = validateField(field, formData[field]);
+      if (error) {
+        newErrors[field] = error;
+      }
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+    } else {
+      setIsSubmitted(true);
+      
+      try {
+        // REPLACE THIS URL WITH YOUR FORMSPREE OR GETFORM ENDPOINT
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          console.log("Form data sent to backend:", formData);
+          setFormData({ fullName: '', email: '', phone: '', budget: '', description: '', nda: false, captcha: '' });
+          
+          // Generate new captcha for next time
+          setCaptchaParams({
+            num1: Math.floor(Math.random() * 10) + 1,
+            num2: Math.floor(Math.random() * 10) + 1
+          });
+
+          setTimeout(() => setIsSubmitted(false), 3000);
+        } else {
+          console.error("Failed to send message");
+          setIsSubmitted(false);
+          alert("Something went wrong. Please try again later.");
+        }
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        setIsSubmitted(false);
+        alert("Network error. Please try again later.");
+      }
+    }
   };
 
   return (
@@ -47,7 +155,7 @@ const ContactUs = () => {
                 <img
                   src="/ai/logoai.svg"
                   alt="ITMC Digital"
-                  className="w-full h-auto object-contain brightness-0 invert"
+                  className="w-full h-auto object-contain"
                 />
               </div>
 
@@ -92,63 +200,81 @@ const ContactUs = () => {
               Get an Expert Consultation
             </h3>
 
+            {isSubmitted && (
+              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-xl text-green-600 text-center font-medium">
+                Thank you! Your message has been sent successfully.
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-              <input
-                type="text"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                placeholder="Full Name*"
-                required
-                className="w-full border border-gray-300 rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all"
-              />
-
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Email ID*"
-                required
-                className="w-full border border-gray-300 rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all"
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Phone No*"
-                required
-                className="w-full border border-gray-300 rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all"
-              />
-
-              <div className="relative">
-                <select
-                  name="budget"
-                  value={formData.budget}
+              <div>
+                <input
+                  type="text"
+                  name="fullName"
+                  value={formData.fullName}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all appearance-none text-gray-500 bg-white"
-                >
-                  <option value="" disabled hidden>Budget (select a range)</option>
-                  <option value="< $10,000">Less than $10,000</option>
-                  <option value="$10,000 - $25,000">$10,000 - $25,000</option>
-                  <option value="$25,000 - $50,000">$25,000 - $50,000</option>
-                  <option value="$50,000+">$50,000+</option>
-                </select>
-                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                  <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                </div>
+                  placeholder="Full Name*"
+                  className={`w-full border ${errors.fullName ? 'border-red-500' : 'border-gray-300'} rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all`}
+                />
+                {errors.fullName && <p className="text-red-500 text-xs mt-1">{errors.fullName}</p>}
               </div>
 
-              <textarea
-                name="description"
-                value={formData.description}
-                onChange={handleChange}
-                placeholder="Description"
-                rows="4"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all resize-none"
-              ></textarea>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Email ID*"
+                  className={`w-full border ${errors.email ? 'border-red-500' : 'border-gray-300'} rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all`}
+                />
+                {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Phone No*"
+                  className={`w-full border ${errors.phone ? 'border-red-500' : 'border-gray-300'} rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all`}
+                />
+                {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
+              </div>
+
+              <div>
+                <div className="relative">
+                  <select
+                    name="budget"
+                    value={formData.budget}
+                    onChange={handleChange}
+                    className={`w-full border ${errors.budget ? 'border-red-500' : 'border-gray-300'} rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all appearance-none text-gray-500 bg-white`}
+                  >
+                    <option value="" disabled hidden>Budget (select a range)</option>
+                    <option value="< $10,000">Less than $10,000</option>
+                    <option value="$10,000 - $25,000">$10,000 - $25,000</option>
+                    <option value="$25,000 - $50,000">$25,000 - $50,000</option>
+                    <option value="$50,000+">$50,000+</option>
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </div>
+                </div>
+                {errors.budget && <p className="text-red-500 text-xs mt-1">{errors.budget}</p>}
+              </div>
+
+              <div>
+                <textarea
+                  name="description"
+                  value={formData.description}
+                  onChange={handleChange}
+                  placeholder="Description"
+                  rows="4"
+                  className={`w-full border ${errors.description ? 'border-red-500' : 'border-gray-300'} rounded-lg px-4 py-3.5 outline-none focus:border-[#4a00ff] focus:ring-1 focus:ring-[#4a00ff] transition-all resize-none`}
+                ></textarea>
+                {errors.description && <p className="text-red-500 text-xs mt-1">{errors.description}</p>}
+              </div>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mt-2">
                 <label className="flex items-center gap-3 cursor-pointer">
@@ -162,25 +288,29 @@ const ContactUs = () => {
                   <span className="text-sm text-gray-600">Include Copy of a Non-Disclosure Agreement</span>
                 </label>
 
-                <div className="flex items-center gap-3">
-                  <span className="text-gray-600 text-sm font-medium">6 + 1</span>
-                  <input
-                    type="text"
-                    name="captcha"
-                    value={formData.captcha}
-                    onChange={handleChange}
-                    required
-                    className="w-16 border border-gray-300 rounded-lg px-2 py-1 outline-none focus:border-[#4a00ff] text-center"
-                  />
+                <div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-gray-600 text-sm font-medium">{captchaParams.num1} + {captchaParams.num2}</span>
+                    <input
+                      type="text"
+                      name="captcha"
+                      value={formData.captcha}
+                      onChange={handleChange}
+                      className={`w-16 border ${errors.captcha ? 'border-red-500' : 'border-gray-300'} rounded-lg px-2 py-1 outline-none focus:border-[#4a00ff] text-center`}
+                    />
+                  </div>
+                  {errors.captcha && <p className="text-red-500 text-xs mt-1 text-right">{errors.captcha}</p>}
                 </div>
               </div>
 
               <div className="mt-6">
                 <button
                   type="submit"
-                  className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-8 py-3.5 rounded-full font-semibold flex items-center gap-2 transition-colors duration-300 shadow-md shadow-purple-200"
+                  disabled={isSubmitted}
+                  className={`bg-[#8b5cf6] text-white px-8 py-3.5 rounded-full font-semibold flex items-center gap-2 transition-colors duration-300 shadow-md shadow-purple-200 ${isSubmitted ? 'opacity-70 cursor-not-allowed' : 'hover:bg-[#7c3aed]'}`}
                 >
-                  Get a free quote <ArrowRight className="w-5 h-5" />
+                  {isSubmitted ? 'Sending...' : 'Get a free quote'} 
+                  {!isSubmitted && <ArrowRight className="w-5 h-5" />}
                 </button>
               </div>
 

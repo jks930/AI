@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Smartphone, Monitor, Code2, PenTool, Brain, Bot, Rocket, Sparkles, Building2, TestTube, CheckCircle2, Layout, Database, Layers, ArrowRight } from 'lucide-react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ forceSolid = false }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(forceSolid);
   const [headerTheme, setHeaderTheme] = useState('light');
   const [headerBg, setHeaderBg] = useState('bg-transparent');
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY <= 20) {
+      if (window.scrollY <= 20 && !forceSolid) {
         setScrolled(false);
         setHeaderTheme('light');
         setHeaderBg('bg-transparent');
@@ -47,9 +48,9 @@ const Header = () => {
         <div className={`flex justify-between items-center transition-all duration-500 ${scrolled ? 'h-16' : 'h-24'}`}>
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <a href="/ai/" className="flex items-center group">
+            <Link to="/" className="flex items-center group">
               <img src="/ai/logoai.svg" alt="logoai" className={`w-auto transition-all duration-500 group-hover:scale-105 filter drop-shadow-sm group-hover:drop-shadow-md ${scrolled ? 'h-11 lg:h-12' : 'h-14 lg:h-16'}`} />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -76,12 +77,12 @@ const Header = () => {
                     <p className="text-gray-600 text-[15px] leading-relaxed mb-6">
                       We transform your ideas into digital products with our expert development services.
                     </p>
-                    <a href="/ai/services/ui-ux-design" className="inline-flex items-center text-gray-900 hover:text-[#4c00ff] font-semibold text-[15px] transition-colors group/link mb-10">
+                    <Link to="/services/ui-ux-design" className="inline-flex items-center text-gray-900 hover:text-[#4c00ff] font-semibold text-[15px] transition-colors group/link mb-10">
                       View all 
                       <span className="ml-3 w-7 h-7 rounded-full bg-[#4c00ff] group-hover/link:bg-blue-600 transition-colors text-white flex items-center justify-center shadow-md shadow-blue-500/20">
                         <ArrowRight className="w-3.5 h-3.5" />
                       </span>
-                    </a>
+                    </Link>
 
                     {/* Blue Stats Card */}
                     <div className="bg-gradient-to-br from-[#4c00ff] to-blue-600 rounded-2xl p-6 text-white shadow-xl relative overflow-hidden mt-auto">
@@ -108,35 +109,35 @@ const Header = () => {
                     {/* Column 1 */}
                     <div className="flex flex-col space-y-10">
                       <div>
-                        <a href="/ai/services/ui-ux-design" className="flex items-center justify-between group/cat mb-5">
+                        <Link to="/services/ui-ux-design" className="flex items-center justify-between group/cat mb-5">
                           <h4 className="text-xl font-bold text-gray-900 group-hover/cat:text-[#4c00ff] transition-colors">Digital Product Design</h4>
                           <ArrowRight className="w-4 h-4 text-gray-400 group-hover/cat:text-[#4c00ff] transition-colors" />
-                        </a>
+                        </Link>
                         <div className="space-y-4">
-                          <a href="/ai/services/ui-ux-design" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          <Link to="/services/ui-ux-design" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <PenTool className="w-4 h-4" /> UI/UX
-                          </a>
-                          <a href="/ai/services/wireframing" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          </Link>
+                          <Link to="/services/wireframing" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <Layout className="w-4 h-4" /> Wireframing
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
                       <div>
-                        <a href="/ai/services/crm-development" className="flex items-center justify-between group/cat mb-5">
+                        <Link to="/services/crm-development" className="flex items-center justify-between group/cat mb-5">
                           <h4 className="text-xl font-bold text-gray-900 group-hover/cat:text-[#4c00ff] transition-colors">Software Development</h4>
                           <ArrowRight className="w-4 h-4 text-gray-400 group-hover/cat:text-[#4c00ff] transition-colors" />
-                        </a>
+                        </Link>
                         <div className="space-y-4">
-                          <a href="/ai/services/crm-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          <Link to="/services/crm-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <Database className="w-4 h-4" /> CRM
-                          </a>
-                          <a href="/ai/services/mvp-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          </Link>
+                          <Link to="/services/mvp-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <Code2 className="w-4 h-4" /> MVP
-                          </a>
-                          <a href="/ai/services/qa-testing" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          </Link>
+                          <Link to="/services/qa-testing" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <TestTube className="w-4 h-4" /> QA & Testing
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -144,62 +145,124 @@ const Header = () => {
                     {/* Column 2 */}
                     <div className="flex flex-col space-y-10">
                       <div>
-                        <a href="/ai/services/android-app-development" className="flex items-center justify-between group/cat mb-5">
+                        <Link to="/services/android-app-development" className="flex items-center justify-between group/cat mb-5">
                           <h4 className="text-xl font-bold text-gray-900 group-hover/cat:text-[#4c00ff] transition-colors">Mobile App Development</h4>
                           <ArrowRight className="w-4 h-4 text-gray-400 group-hover/cat:text-[#4c00ff] transition-colors" />
-                        </a>
+                        </Link>
                         <div className="space-y-4">
-                          <a href="/ai/services/android-app-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          <Link to="/services/android-app-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <Smartphone className="w-4 h-4" /> Android
-                          </a>
-                          <a href="/ai/services/ios-app-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          </Link>
+                          <Link to="/services/ios-app-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <Smartphone className="w-4 h-4" /> iOS
-                          </a>
-                          <a href="/ai/services/cross-platform-app-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                          </Link>
+                          <Link to="/services/cross-platform-app-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                             <Layers className="w-4 h-4" /> Cross Platform
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
                       <div className="space-y-4">
-                        <a href="/ai/services/web-app-development" className="flex items-center gap-3 text-gray-900 font-bold hover:text-[#4c00ff] text-[17px] transition-colors hover:translate-x-1 duration-300">
+                        <Link to="/services/web-app-development" className="flex items-center gap-3 text-gray-900 font-bold hover:text-[#4c00ff] text-[17px] transition-colors hover:translate-x-1 duration-300">
                           <Monitor className="w-5 h-5 text-gray-500" /> Web App
-                        </a>
-                        <a href="/ai/services/website-development" className="flex items-center gap-3 text-gray-900 font-bold hover:text-[#4c00ff] text-[17px] transition-colors hover:translate-x-1 duration-300">
+                        </Link>
+                        <Link to="/services/website-development" className="flex items-center gap-3 text-gray-900 font-bold hover:text-[#4c00ff] text-[17px] transition-colors hover:translate-x-1 duration-300">
                           <Layout className="w-5 h-5 text-gray-500" /> Website
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                     {/* Column 3 */}
                     <div className="flex flex-col">
-                      <a href="/ai/services/artificial-intelligence" className="flex items-center justify-between group/cat mb-5">
+                      <Link to="/services/artificial-intelligence" className="flex items-center justify-between group/cat mb-5">
                         <h4 className="text-xl font-bold text-gray-900 group-hover/cat:text-[#4c00ff] transition-colors">Artificial Intelligence</h4>
                         <ArrowRight className="w-4 h-4 text-gray-400 group-hover/cat:text-[#4c00ff] transition-colors" />
-                      </a>
+                      </Link>
                       <div className="space-y-4">
-                        <a href="/ai/services/machine-learning" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                        <Link to="/services/machine-learning" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                           <Brain className="w-4 h-4" /> Machine Learning
-                        </a>
-                        <a href="/ai/services/generative-ai-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                        </Link>
+                        <Link to="/services/generative-ai-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                           <Sparkles className="w-4 h-4" /> Gen AI
-                        </a>
-                        <a href="/ai/services/ai-agent-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                        </Link>
+                        <Link to="/services/ai-agent-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                           <Bot className="w-4 h-4" /> AI Agent
-                        </a>
-                        <a href="/ai/services/ai-chatbot-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                        </Link>
+                        <Link to="/services/ai-chatbot-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                           <Bot className="w-4 h-4" /> AI Chatbot
-                        </a>
-                        <a href="/ai/services/natural-language-processing" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                        </Link>
+                        <Link to="/services/natural-language-processing" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                           <Code2 className="w-4 h-4" /> NLP
-                        </a>
-                        <a href="/ai/services/metaverse-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
+                        </Link>
+                        <Link to="/services/metaverse-development" className="flex items-center gap-3 text-gray-600 hover:text-[#4c00ff] text-[15px] transition-colors hover:translate-x-1 duration-300">
                           <Monitor className="w-4 h-4" /> Metaverse
-                        </a>
+                        </Link>
                       </div>
                     </div>
 
                   </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Products Mega Menu */}
+            <div className="group">
+              <a href="/ai/#products" className={`font-semibold transition-colors flex items-center gap-1 py-4 ${(scrolled && headerTheme === 'dark') ? 'text-gray-200 hover:text-white' : 'text-gray-800 hover:text-[#4c00ff]'}`}>
+                Products
+                <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              
+              <div className="absolute top-full left-0 w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform -translate-y-4 group-hover:translate-y-0 z-[100] bg-white border-b border-gray-100 shadow-[0_20px_40px_rgba(0,0,0,0.08)] overflow-hidden">
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 py-10 lg:py-14 flex flex-col lg:flex-row gap-10 relative z-10">
+                  
+                  {/* Left Column - Description */}
+                  <div className="w-full lg:w-[30%] lg:border-r border-gray-100 lg:pr-10">
+                    <h3 className="text-gray-900 text-[28px] font-bold mb-4 tracking-tight">Products</h3>
+                    <div className="w-16 h-1 bg-[#4c00ff] mb-6 rounded-full"></div>
+                    <p className="text-gray-600 text-[15px] leading-relaxed mb-8">
+                      Explore our suite of innovative products and platforms designed to accelerate your digital transformation and empower your workforce.
+                    </p>
+                    <a href="/ai/#products" className="inline-flex items-center text-gray-900 hover:text-[#4c00ff] font-semibold text-[15px] transition-colors group/link">
+                      View all 
+                      <span className="ml-3 w-7 h-7 rounded-full bg-[#4c00ff] group-hover/link:bg-blue-600 transition-colors text-white flex items-center justify-center shadow-md shadow-blue-500/20">
+                        <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
+                      </span>
+                    </a>
+                  </div>
+
+                  {/* Middle Column - Links Grid */}
+                  <div className="w-full lg:w-[45%] grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4">
+                    <div className="flex flex-col space-y-5">
+                      <Link to="/products/pulse-ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Pulse.ai</Link>
+                      <Link to="/products/insurance-data-hub" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Insurance Data Hub</Link>
+                      <Link to="/products/iip" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Integrated Insurance</Link>
+                      <Link to="/products/smarthr" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">SmartHR</Link>
+                      <Link to="/products/smartpay" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">SmartPay</Link>
+                    </div>
+                    <div className="flex flex-col space-y-5">
+                      <Link to="/products/pulse-nerve" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Pulse.nerve</Link>
+                      <Link to="/products/digital-bpaas" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Digital BPaaS</Link>
+                      <Link to="/products/sequre" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Sequre</Link>
+                      <Link to="/products/pulse-retail-ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Pulse.Retail.ai</Link>
+                      <Link to="/products/resume-builder" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Resume Builder</Link>
+                    </div>
+                    <div className="flex flex-col space-y-5">
+                      <Link to="/products/property-management" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Property Management</Link>
+                      <Link to="/products/hrms" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">HRMS</Link>
+                      <Link to="/products/crm" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">CRM Suite</Link>
+                      <Link to="/products/ats" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">ATS</Link>
+                      <Link to="/products/casacab" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">CasaCab</Link>
+                    </div>
+                  </div>
+
+                  {/* Right Column - Image */}
+                  <div className="hidden lg:block w-[25%] rounded-2xl overflow-hidden relative group/img shadow-2xl">
+                    <img src="/ai/images/header-1.jpeg" alt="Products & Platforms" className="w-full h-full object-cover transform group-hover/img:scale-110 transition-transform duration-1000 ease-out" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -233,25 +296,25 @@ const Header = () => {
                   {/* Middle Column - Links Grid */}
                   <div className="w-full lg:w-[45%] grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4">
                     <div className="flex flex-col space-y-5">
-                      <a href="/ai/on-demand" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">On-Demand</a>
-                      <a href="/ai/enterprise" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Enterprise</a>
-                      <a href="/ai/finance" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Finance</a>
-                      <a href="/ai/e-commerce" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">E-commerce</a>
-                      <a href="/ai/game" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Game</a>
+                      <Link to="/on-demand" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">On-Demand</Link>
+                      <Link to="/enterprise" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Enterprise</Link>
+                      <Link to="/finance" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Finance</Link>
+                      <Link to="/e-commerce" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">E-commerce</Link>
+                      <Link to="/game" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Game</Link>
                     </div>
                     <div className="flex flex-col space-y-5">
-                      <a href="/ai/healthcare" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Healthcare</a>
-                      <a href="/ai/travel" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Travel</a>
-                      <a href="/ai/logistics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Logistics</a>
-                      <a href="/ai/start-up" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Start-Up</a>
-                      <a href="/ai/entertainment" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Entertainment</a>
+                      <Link to="/healthcare" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Healthcare</Link>
+                      <Link to="/travel" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Travel</Link>
+                      <Link to="/logistics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Logistics</Link>
+                      <Link to="/start-up" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Start-Up</Link>
+                      <Link to="/entertainment" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Entertainment</Link>
                     </div>
                     <div className="flex flex-col space-y-5">
-                      <a href="/ai/real-estate" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Real Estate</a>
-                      <a href="/ai/education" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Education</a>
-                      <a href="/ai/electric-vehicle" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Electric Vehicle</a>
-                      <a href="/ai/automotive" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Automotive</a>
-                      <a href="/ai/wearable" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Wearable</a>
+                      <Link to="/real-estate" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Real Estate</Link>
+                      <Link to="/education" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Education</Link>
+                      <Link to="/electric-vehicle" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Electric Vehicle</Link>
+                      <Link to="/automotive" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Automotive</Link>
+                      <Link to="/wearable" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Wearable</Link>
                     </div>
                   </div>
 
@@ -294,31 +357,31 @@ const Header = () => {
                   {/* Middle Column - Links Grid */}
                   <div className="w-full lg:w-[45%] grid grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-4">
                     <div className="flex flex-col space-y-4">
-                      <a href="/ai/artificial-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AI</a>
-                      <a href="/ai/generative-ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Generative AI</a>
-                      <a href="/ai/machine-learning" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">ML</a>
-                      <a href="/ai/blockchain" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Blockchain</a>
-                      <a href="/ai/ar-vr" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AR/VR</a>
-                      <a href="/ai/visionos" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">VisionOS</a>
-                      <a href="/ai/unity" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Unity</a>
+                      <Link to="/artificial-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AI</Link>
+                      <Link to="/generative-ai" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Generative AI</Link>
+                      <Link to="/machine-learning" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">ML</Link>
+                      <Link to="/blockchain" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Blockchain</Link>
+                      <Link to="/ar-vr" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">AR/VR</Link>
+                      <Link to="/visionos" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">VisionOS</Link>
+                      <Link to="/unity" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Unity</Link>
                     </div>
                     <div className="flex flex-col space-y-4">
-                      <a href="/ai/iot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">IoT</a>
-                      <a href="/ai/metaverse" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Metaverse</a>
-                      <a href="/ai/big-data" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Big Data</a>
-                      <a href="/ai/data-science" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Data Science</a>
-                      <a href="/ai/business-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Business Intelligence</a>
-                      <a href="/ai/nft" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NFT</a>
-                      <a href="/ai/chatbot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Chatbot</a>
+                      <Link to="/iot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">IoT</Link>
+                      <Link to="/metaverse" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Metaverse</Link>
+                      <Link to="/big-data" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Big Data</Link>
+                      <Link to="/data-science" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Data Science</Link>
+                      <Link to="/business-intelligence" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Business Intelligence</Link>
+                      <Link to="/nft" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NFT</Link>
+                      <Link to="/chatbot" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Chatbot</Link>
                     </div>
                     <div className="flex flex-col space-y-4">
-                      <a href="/ai/cloud" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Cloud</a>
-                      <a href="/ai/smart-tv" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Smart TV</a>
-                      <a href="/ai/nlp" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NLP</a>
-                      <a href="/ai/rpa" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">RPA</a>
-                      <a href="/ai/digital-ethics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Digital Ethics</a>
-                      <a href="/ai/devops" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">DevOps</a>
-                      <a href="/ai/odoo" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Odoo</a>
+                      <Link to="/cloud" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Cloud</Link>
+                      <Link to="/smart-tv" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Smart TV</Link>
+                      <Link to="/nlp" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">NLP</Link>
+                      <Link to="/rpa" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">RPA</Link>
+                      <Link to="/digital-ethics" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Digital Ethics</Link>
+                      <Link to="/devops" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">DevOps</Link>
+                      <Link to="/odoo" className="text-gray-600 hover:text-[#4c00ff] text-[15px] font-medium transition-all hover:translate-x-1 duration-300 block">Odoo</Link>
                     </div>
                   </div>
 
@@ -381,30 +444,56 @@ const Header = () => {
               {activeAccordion === 'services' && (
                 <div className="px-4 py-3 space-y-1 bg-white rounded-xl mt-1 border border-gray-100 shadow-sm animate-in fade-in slide-in-from-top-2">
                   <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2 mt-2">Digital Product Design</div>
-                  <a href="/ai/services/ui-ux-design" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">UI/UX</a>
-                  <a href="/ai/services/wireframing" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Wireframing</a>
+                  <Link to="/services/ui-ux-design" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">UI/UX</Link>
+                  <Link to="/services/wireframing" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Wireframing</Link>
                   
                   <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2 mt-4">Software Development</div>
-                  <a href="/ai/services/crm-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">CRM</a>
-                  <a href="/ai/services/mvp-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">MVP</a>
-                  <a href="/ai/services/qa-testing" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">QA & Testing</a>
+                  <Link to="/services/crm-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">CRM</Link>
+                  <Link to="/services/mvp-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">MVP</Link>
+                  <Link to="/services/qa-testing" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">QA & Testing</Link>
                   
                   <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2 mt-4">Mobile App Development</div>
-                  <a href="/ai/services/android-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Android</a>
-                  <a href="/ai/services/ios-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">iOS</a>
-                  <a href="/ai/services/cross-platform-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Cross Platform</a>
+                  <Link to="/services/android-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Android</Link>
+                  <Link to="/services/ios-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">iOS</Link>
+                  <Link to="/services/cross-platform-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Cross Platform</Link>
 
                   <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2 mt-4">Web Solutions</div>
-                  <a href="/ai/services/web-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Web App</a>
-                  <a href="/ai/services/website-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Website</a>
+                  <Link to="/services/web-app-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Web App</Link>
+                  <Link to="/services/website-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Website</Link>
 
                   <div className="text-[11px] font-bold text-gray-400 uppercase tracking-wider mb-2 mt-4">Artificial Intelligence</div>
-                  <a href="/ai/services/machine-learning" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Machine Learning</a>
-                  <a href="/ai/services/generative-ai-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Gen AI</a>
-                  <a href="/ai/services/ai-agent-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">AI Agent</a>
-                  <a href="/ai/services/ai-chatbot-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">AI Chatbot</a>
-                  <a href="/ai/services/natural-language-processing" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">NLP</a>
-                  <a href="/ai/services/metaverse-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Metaverse</a>
+                  <Link to="/services/machine-learning" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Machine Learning</Link>
+                  <Link to="/services/generative-ai-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Gen AI</Link>
+                  <Link to="/services/ai-agent-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">AI Agent</Link>
+                  <Link to="/services/ai-chatbot-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">AI Chatbot</Link>
+                  <Link to="/services/natural-language-processing" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">NLP</Link>
+                  <Link to="/services/metaverse-development" onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff] pl-2 border-l-2 border-transparent hover:border-[#4c00ff]">Metaverse</Link>
+                </div>
+              )}
+            </div>
+
+            {/* Products Accordion */}
+            <div>
+              <button 
+                onClick={() => setActiveAccordion(activeAccordion === 'products' ? null : 'products')}
+                className="w-full flex items-center justify-between px-3 py-3 rounded-md text-base font-semibold text-gray-800 hover:text-[#4c00ff] hover:bg-[#e6ebff]"
+              >
+                Products
+                <svg className={`w-4 h-4 transition-transform duration-300 ${activeAccordion === 'products' ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {activeAccordion === 'products' && (
+                <div className="px-4 py-3 bg-white rounded-xl mt-1 border border-gray-100 shadow-sm grid grid-cols-2 gap-x-4 gap-y-2 animate-in fade-in slide-in-from-top-2">
+                  {[
+                    "Pulse.ai", "Insurance Data Hub", "IIP", "SmartHR", "SmartPay",
+                    "Pulse.nerve", "Digital BPaaS", "Sequre", "Pulse.Retail.ai", "Resume Builder",
+                    "Property Management", "HRMS", "CRM", "ATS", "CasaCab"
+                  ].map(prod => (
+                    <Link key={prod} to={`/${products/prod.toLowerCase().replace(/[\/\s\.]/g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
+                      {prod}
+                    </Link>
+                  ))}
                 </div>
               )}
             </div>
@@ -427,9 +516,9 @@ const Header = () => {
                     "Healthcare", "Travel", "Logistics", "Start-Up", "Entertainment",
                     "Real Estate", "Education", "Electric Vehicle", "Automotive", "Wearable"
                   ].map(ind => (
-                    <a key={ind} href={`/ai/${ind.toLowerCase().replace(/ /g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
+                    <Link key={ind} to={`/${ind.toLowerCase().replace(/ /g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
                       {ind}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -453,9 +542,9 @@ const Header = () => {
                     "IoT", "Metaverse", "Big Data", "Data Science", "Business Intelligence", "NFT", "Chatbot",
                     "Cloud", "Smart TV", "NLP", "RPA", "Digital Ethics", "DevOps", "Odoo"
                   ].map(tech => (
-                    <a key={tech} href={`/ai/${tech.toLowerCase().replace(/[\/\s]/g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
+                    <Link key={tech} to={`/${tech.toLowerCase().replace(/[\/\s]/g, '-')}`} onClick={() => setIsOpen(false)} className="block text-sm font-medium text-gray-600 py-2 hover:text-[#4c00ff]">
                       {tech}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}

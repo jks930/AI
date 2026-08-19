@@ -40,7 +40,7 @@ export default function TransformServices() {
               <div className="sm:w-2/5 h-[220px] sm:h-auto overflow-hidden relative">
                 <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
                 <img 
-                  src={service.img} 
+                  src={service.image} 
                   alt={service.title} 
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
                 />
